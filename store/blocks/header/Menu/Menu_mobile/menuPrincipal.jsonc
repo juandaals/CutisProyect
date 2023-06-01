@@ -1,0 +1,149 @@
+{
+    // Menu mobile
+  "menu#drawer": {
+    "children": [
+      "rich-text#tituloCategoriasDes",
+      "flex-layout.row#allCategorys",
+      "flex-layout.col#menus-items"
+    ],
+    "props": {
+      "blockClass":"menu-m",
+      "orientation": "vertical"
+    }
+  },
+  // Menus items
+  "flex-layout.col#menus-items": {
+    "children": [
+      "disclosure-layout#saleAll",
+      "disclosure-layout#braandAll",
+      "disclosure-layout#kitsAll",
+      "disclosure-layout#iniciarSesionAll"
+    ],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  // Menus 
+  "rich-text#tituloCategoriasDes": {
+    "props": {
+      "text": "Todas las categorías",
+      "blockClass": "TItuloMenu"
+    }
+  },
+//   Menu Items
+  "menu-item#categoryMobile":{
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "itemsPrincipales",
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "tagTitle": "Kits",
+      "text": "Todas las categorías"
+      }
+    }
+  },
+  "menu-item#kits":{
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "sinFlecha",
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "href":"/kits",
+      "tagTitle": "Kits",
+      "text": "Kits"
+      }
+    }
+  },
+  "menu-item#brandMobile":{
+    "props": {
+      "id": "menu-item-brand-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "itemsPrincipales",
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "tagTitle": "Marcas",
+      "text": "Nuestras Marcas"
+      }
+    }
+  },
+  "menu-item#saleMobile":{
+    "props": {
+      "id": "menu-item-sale-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["itemsPrincipales","ofertas"],
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "tagTitle": "Ofertas",
+      "text": "Ofertas"
+      }
+    }
+  },
+  "menu-item#iniciarSesion":{
+    "props": {
+      "id": "menu-item-sale-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": [ "sinFlecha","iniciarSes"],
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "href":"/login",
+      "tagTitle": "sesion",
+      "text": "Iniciar Sesión"
+      }
+    }
+  },
+  // Todas las kitd sub menu
+  "disclosure-layout#kitsAll": {
+    "children": ["disclosure-trigger#kitsAll","disclosure-content#kitsAll"],
+    "props": {
+      "blockClass": ["subMneusM"]
+    }
+  },
+  "disclosure-trigger#kitsAll": {
+    "children": ["menu-item#kits"],
+    "props": {
+      "blockClass": ["subMneusMTrigger"]
+    }
+  },
+  "disclosure-content#kitsAll": {
+    "children": ["disclosure-trigger#kitsAll"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+   // Todas las iniciar sesion sub menu
+   "disclosure-layout#iniciarSesionAll": {
+    "children": ["disclosure-trigger#iniciarSesionAll","disclosure-content#iniciarSesionAll"],
+    "props": {
+      "blockClass": ["subMneusM"]
+    }
+  },
+  "disclosure-trigger#iniciarSesionAll": {
+    "children": ["menu-item#iniciarSesion"],
+    "props": {
+      "blockClass": ["subMneusMTrigger"]
+    }
+  },
+  "disclosure-content#iniciarSesionAll": {
+    "children": ["disclosure-trigger#iniciarSesionAll"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  }
+}

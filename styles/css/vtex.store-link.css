@@ -1,0 +1,99 @@
+.link--Lupa {
+    height: 20px !important;
+    margin-top: -11px;
+    margin-right: 10px;
+}
+.label--Hcontactenos{
+    font-size: 15px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.link--Hcontactenos{
+    text-decoration: none;
+    color: black;
+}
+.link--Hcontactenos:hover{
+    color: #49bce9;
+}
+.label--Hcontactenos::before {
+    content: "";
+    width: 20px;
+    display: block;
+    height: 26px;
+    background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-title.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.label--nuestras-tiendas {
+    font-size: 15px;
+}
+
+.link--nuestras-tiendas {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+
+.label--nuestras-tiendas {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.label--nuestras-tiendas::before {
+    content: "";
+    width: 20px;
+    display: block;
+    height: 26px;
+    background-image: url(https://cutis.vteximg.com.br/arquivos/Vector-tiendas.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.link--nuestras-tiendas:hover {
+    color: #49bce9;
+}
+.childrenContainer.childrenContainer--Lupa {
+  /* background: rgb(39,175,229); */
+  border-radius: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transition: 400ms all;
+  z-index: 99;
+}
+.link--store-contact-center{
+    width: 30% !important;
+    height: 40px;
+    padding: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.link--store-contact-center:hover{
+    background-color: black;
+}
+.label--store-contact-center{
+    width: 100%;
+    text-align: center;
+}
+@media(max-width:600px){
+    .link--store-contact-center{
+        width: 60% !important;
+        height: 35px;
+    }
+}

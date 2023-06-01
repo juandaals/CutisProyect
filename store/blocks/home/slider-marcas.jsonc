@@ -1,0 +1,134 @@
+{
+    "rich-text#NUESTRAS-MARCAS": {
+        "props": {
+          "text": "## Nuestras marcas",
+          "blockClass": ["shelfTitle","marcasTittles"]
+        }
+    },
+    "list-context.image-list#marcas": {
+        "children": ["slider-layout#marcas-images"],
+        "props": {
+            "height": 720,
+            "images": [
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/be-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/be-new-marcas.png",
+                    "link":{
+                      "url":"/be"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/isdin-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/isdin-new-marcas.png",
+                    "link":{
+                      "url":"/isdin"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/sesderma-new-marca.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/sesderma-new-marca.png",
+                    "link":{
+                      "url":"/sesderma"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/la-roche-posay-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/la-roche-posay-new-marcas.png",
+                    "link":{
+                      "url":"/la-roche-posay"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/medihealth-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/medihealth-new-marcas.png",
+                    "link":{
+                      "url":"/medihealth"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/pharmaderm-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/pharmaderm-new-marcas.png",
+                    "link":{
+                        "url":"/pharmaderm"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/avene-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/avene-new-marcas.png",
+                    "link":{
+                        "url":"/avene"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/bioderma-new-marca.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/bioderma-new-marca.png",
+                    "link":{
+                        "url":"/bioderma"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/eucerin-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/eucerin-new-marcas.png",
+                    "link":{
+                        "url":"/eucerin"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/vychi-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/vychi-new-marcas.png",
+                    "link":{
+                        "url":"/vichy"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/uriage-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriage-new-marcas.png",
+                    "link":{
+                        "url":"/uriage"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/epidermique-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/epidermique-new-marcas.png",
+                    "link":{
+                        "url":"/epidermique"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/descarga.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/descarga.png",
+                    "link":{
+                        "url":"/galderma"
+                      }
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/skindrug-new-marca.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/skindrug-new-marca.png",
+                  "link":{
+                      "url":"/skindrug"
+                    }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/ISISPHARMA-NEW-MARCA.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/ISISPHARMA-NEW-MARCA.png",
+                    "link":{
+                        "url":"/isispharma"
+                      }
+                }
+            ]
+        }
+    },
+    "slider-layout#marcas-images": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 3
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
+            "blockClass": "marcas-carousel"
+        }
+    }
+}

@@ -1,0 +1,362 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#2-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+  "flex-layout.row#2-desktop": {
+    "children": ["rich-text#header-top-1","rich-text#header-top-2"],
+    "props": {
+      "blockClass":"header-top",
+      "fullWidth": "true"
+    }
+  },
+  "rich-text#header-top-1": {
+    "props": {
+      "text": "Suscribite y obtén 10% de descuento.",
+      "blockClass": ["header-top"]
+    }
+  },
+  "rich-text#header-top-2": {
+    "props": {
+      "text": "[Unete Ya](/)",
+      "blockClass": ["header-top","headertopLink"]
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop","flex-layout.row#5-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#search-contactenos",
+      "flex-layout.col#tiendas-desktop",
+      "flex-layout.col#login-desktop",
+      "flex-layout.col#fwavoritos",
+      "minicart.v2"
+    ]
+  },
+  "login":{
+    "props":{
+      "hasGoogleOneTap":"true",
+      "isInitialScreenOptionOnly":"false",
+      "accountOptionLinks":"/login?returnUrl=%2FAccount"
+    }
+  },
+  "link#Tiendas": {
+    "props": {
+      "blockClass": "nuestras-tiendas",
+      "label": "Nuestras Tiendas",
+      "href": "/nuestras-tiendas"
+    }
+  },
+  "link#login": {
+    "props": {
+      "href": "/login?returnUrl=%2FAccount"
+    },
+    "children":[
+      "login"
+    ]
+  },
+  "flex-layout.row#5-desktop": {
+    "children": ["flex-layout.col#category-menu"],
+    "props": {
+      "blockClass": "menu-main",
+      "fullWidth": "true"
+    }
+  },
+  "search-bar":{
+    "props":{
+      "compactMode":false
+    }
+  },
+  // priemra columna
+  "flex-layout.col#logo-desktop": { 
+    "props": {
+      "blockClass":"logo",
+      "width":"10%",
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#search-desktop": {
+    "props": {
+      "blockClass":"searchBar",
+      "width":"52%",
+      "verticalAlign": "middle"
+    },
+    "children": ["disclosure-layout#category","search-bar"]
+  },
+  //Barra discluse
+  "disclosure-layout#category": {
+    "children": ["disclosure-trigger#category", "disclosure-content#category"]
+  },
+  "disclosure-trigger#category": {
+    "children": ["rich-text#category"],
+    "props": {
+      "blockClass":"titleCategoryF"
+    }
+  },
+  "disclosure-content#category": {
+    "children": ["rich-text#categoryC", "rich-text#categoryC1", "rich-text#categoryC2","rich-text#categoryC3", "rich-text#categoryC4", "rich-text#categoryC5"],
+    "props": {
+      "blockClass":"contCategoryF"
+    }
+  },
+  "rich-text#category": {
+    "props": {
+      "text": "Todas las categorías",
+      "blockClass":"titleCategory"
+    }
+  },
+  "rich-text#categoryC": {
+    "props": {
+      "text": "Rostro",
+      "blockClass":["contenCate", "Rostro"]
+    }
+  },
+  "rich-text#categoryC1": {
+    "props": {
+      "text": "Solares",
+      "blockClass":["contenCate", "Solares"]
+    }
+  },
+  "rich-text#categoryC2": {
+    "props": {
+      "text": "Maquillaje",
+      "blockClass":["contenCate", "Maquillaje"]
+    }
+  },
+  "rich-text#categoryC3": {
+    "props": {
+      "text": "Capilar",
+      "blockClass":["contenCate", "Capilar"]
+    }
+  },
+  "rich-text#categoryC4": {
+    "props": {
+      "text": "Corporal",
+      "blockClass":["contenCate", "Corporal"]
+    }
+  },
+  "rich-text#categoryC5": {
+    "props": {
+      "text": "Medicamentos",
+      "blockClass":["contenCate", "Medicamentos"]
+    }
+  },
+  //Cierre Barra disclousure
+  "flex-layout.col#search-contactenos": {
+    "props": {
+      "blockClass":"header-contactenos",
+      "width":"12%",
+      "verticalAlign": "middle"
+    },
+    "children": ["link#contactenos"]
+  },
+  "link#contactenos": {
+    "props": {
+      "blockClass": "Hcontactenos",
+      "label": "Servicio Al Cliente",
+      "href": "/contact"
+    }
+  },
+
+
+
+
+
+  "flex-layout.col#tiendas-desktop": {
+    "props": {
+      "blockClass":"header-tiendas",
+      "width":"12%",
+      "verticalAlign": "middle"
+    },
+    "children": ["link#Tiendas"]
+  },
+  "flex-layout.col#login-desktop": {
+    "props": {
+      "blockClass":"login",
+      "width":"12%",
+      "verticalAlign": "middle"
+    },
+    "children": ["link#login","flex-layout.col#login-options"]
+  },
+  "flex-layout.col#login-options":{
+    "props":{
+      "blockClass":"login-options"
+    },
+    "children":[
+      "rich-text#login-link",
+      "rich-text#registro-link"
+    ]
+  },
+  "rich-text#login-link": {
+    "props": {
+      "text": "[Iniciar sesión](/login)",
+      "blockClass":"login-options"
+    }
+  },
+  "rich-text#registro-link": {
+    "props": {
+      "text": "[Registrarse](/login)",
+      "blockClass":"login-options"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "flex-layout.col#fwavoritos": {
+    "props": {
+      "blockClass":"favoritos",
+      "width":"10%",
+      "verticalAlign": "middle"
+    },
+    "children": ["image#favoritosLogo"]
+  },
+  "image#favoritosLogo": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/favoritosNew.png",
+      "blockClass": "favoritos-image",
+      "link":{
+        "url":"/Account#/wishlist"
+      }
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://cutis.vteximg.com.br/arquivos/logo-final.png",
+      "width": "180px",
+      "blockClass":"logo"
+    }
+  },
+  // HEADER LAYOUT MOBILE
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      // "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      "disclosure-layout#lupa",
+      "image#favoritosLogo",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "disclosure-layout#lupa": {
+    "children": ["disclosure-trigger#lupa","disclosure-content#lupa"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#lupa": {
+    "children": ["image#lupa"],
+    "props": {
+      "blockClass": "lupaTrigger"
+    }
+  },
+  // cierre del buscador
+  "disclosure-trigger#cierreBuscador": {
+    "children": ["rich-text#cierreBuscardor"],
+    "props": {
+      "blockClass": "cierreBuscador"
+    }
+  },
+  "rich-text#cierreBuscardor": {
+    "props": {
+      "text": "✕",
+      "blockClass": ["cierreBuscador"]
+    }
+  },
+  // contenido
+  "disclosure-content#lupa": {
+    "children": ["disclosure-trigger#cierreBuscador","search-bar"],
+    "props": {
+      "blockClass": "lupaContent"
+    }
+  },
+  "link.product#lupa": {
+    "props": {
+      "blockClass": "Lupa"
+    },
+    "children":["image#lupa"]
+  },
+  "image#lupa": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/lupablanca.png",
+      "maxHeight": 30,
+      "blockClass":"LupaImagen"
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"],
+    "props":{
+      "backdropMode":"none",
+      "blockClass":"menu-m",
+      "slideDirection":"leftToRight"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://cutis.vteximg.com.br/arquivos/logo-final.png",
+      "width": "90"
+    }
+  },
+  "responsive-layout.phone": {
+    "children": ["sticky-layout#barOptions"]
+  },
+  "sticky-layout#barOptions": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": ["flex-layout.row#optionBar"]
+  },
+  "flex-layout.row#optionBar": {
+    "children": [
+
+    ],
+    "props": {
+      "blockClass": "optionBar"
+    }
+  }
+}

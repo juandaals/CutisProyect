@@ -1,0 +1,18 @@
+{
+
+    "flex-layout.col#estaticas": {
+        "props": {
+            "blockClass": "contenidoPoliticas"
+        },
+        "children": [
+            "rich-text#datos-content-1",
+            "rich-text#datos-content-2",
+            "rich-text#datos-content-3",
+            "rich-text#datos-content-4",
+            "rich-text#datos-content-5",
+            "rich-text#datos-content-6",
+            "rich-text#datos-content-7",
+            "rich-text#datos-content-8"
+        ]
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "footer-layout.mobile": {
+        "children": [
+            "flex-layout.row#1-footer-mobile",
+            "tab-layout#footerM",
+            "flex-layout.row#2-footer-mobile",
+            "flex-layout.row#3-footer-mobile",
+            "rich-text#derechosReservados",
+            "flex-layout.row#sticky-MenuFixed"
+        ]
+    },
+    "flex-layout.row#1-footer-mobile": {
+        "props": {
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": ["flex-layout.col#footer-1-desktop"]
+    },
+    "rich-text#footer-mobile": {
+        "props": {
+            "text": "All stock and product photos are from photos.icons8.com",
+            "blockClass": "footer"
+        }
+    },
+    "flex-layout.row#2-footer-mobile": {
+        "children": ["flex-layout.col#footer-1-mobile"],
+        "props": {
+            "blockClass": "payment-methods",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        }
+    },
+    "flex-layout.col#footer-1-mobile": {
+        "children": [
+            "social-networks"
+        ],
+        "props": {
+            "blockClass": "payment-methods",
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "rowGap": 4
+        }
+    },
+    "flex-layout.row#3-footer-mobile": {
+        "children": [
+            "flex-layout.col#footer-medios-mobile"
+        ],
+        "props": {
+            "blockClass": "medios-Pago",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        }
+    },
+    // contenedor final copn los medios de pago y copyright
+    "flex-layout.col#mediosPago-footer-mobile": {
+        "children": [
+            "flex-layout.col#footer-medios-mobile"
+        ],
+        "props": {
+            "blockClass": "payment-methods"
+        }
+    },
+    // contenedor secundario
+    "flex-layout.col#footer-medios-mobile": {
+        "children": [
+            "rich-text#tituloMedios",
+            "image#pagosMobile",
+            "rich-text#tituloDesarrolladoPor",
+            "flex-layout.row#desarrollaadoPorImages"
+        ],
+        "props": {
+          "blockClass": "mediosColumn"
+        }
+    },
+    // tiutulos medios de pago 
+    "rich-text#tituloMedios": {
+        "props": {
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "text": "Medios de pago",
+          "blockClass": "titulosFooter"
+        }
+    },
+    // imagen de medios de pago
+    "image#pagosMobile": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/mediosPagoMobileNew.png",
+          "blockClass": ["imagenFooter"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // titulo desarrollado por
+    "rich-text#tituloDesarrolladoPor": {
+        "props": {
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "text": "Desarrollado por",
+          "blockClass": ["titulosFooter","ultimo-titulo"]
+        }
+    },
+    // imagenes desarrollado por
+    "flex-layout.row#desarrollaadoPorImages": {
+        "children": [
+            "image#ePartnerLogo",
+            "image#vtexlogo"
+        ],  
+        "props": {
+          "blockClass": "desarrollado"
+        }
+    },
+    "image#ePartnerLogo": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/epartner-logo.png",
+          "blockClass": ["logos"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    "image#vtexlogo": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/vtex-logo.png",
+          "blockClass": ["logos"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // ultimo comentario derechos reservados
+    "rich-text#derechosReservados": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Todos los derechos reservados",
+          "blockClass": ["derechosReservados"]
+        }
+    }
+}

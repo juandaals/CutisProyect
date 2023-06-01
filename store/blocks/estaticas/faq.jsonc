@@ -1,0 +1,1498 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "image#faqsImg",
+      "rich-text#faq",
+      "flex-layout.row#faq"
+    ]
+  },
+  // titulo de la pagina
+  "rich-text#faq": {
+    "props": {
+      "blockClass":"faqsTitulo",
+      "text": "## PREGUNTAS FRECUENTES"
+    }
+  },
+  // iamgenes en el top
+  "image#faqsImg": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
+      "blockClass": "faqsImg"
+    }
+  },
+  "image#faqsImgM": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
+      "blockClass": "faqsImgM"
+    }
+  },
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq"
+    },
+    "children": [
+      "flex-layout.col#estaticasfaq",
+      "flex-layout.col#faq1"
+    ]
+  },
+  // primer disclousare
+  "flex-layout.col#estaticasfaq": {
+    "props": {
+        "blockClass": "contenidoPoliticas"
+    },
+    "children": [
+        "rich-text#faQ-content-1",
+        "rich-text#faQ-content-2",
+        "rich-text#faQ-content-3",
+        /* "rich-text#faQ-content-4", */
+        "rich-text#faQ-content-5",
+        "rich-text#faQ-content-6",
+        "rich-text#faQ-content-7",
+        "rich-text#faQ-content-8"
+    ]
+},
+
+// contenido de los terminos y condiciones
+"rich-text#faQ-content-1": {
+    "props": {
+        "text": "[Terminos y condiciones](/terminos-y-condiciones)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-2": {
+    "props": {
+        "text": "[Restablecer contraseña](/restablecer-contrasena)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-3": {
+    "props": {
+        "text": "[Politica de privacidad](/politica-privacidad)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-4": {
+    "props": {
+        "text": "[Accesos corporativos](/accesos-corporativos)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-5": {
+    "props": {
+        "text": "[Protección de datos](/proteccion-datos)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-6": {
+    "props": {
+        "text": "[Derecho al retracto](/derecho-de-retracto)",
+        "blockClass":"link-politicas"
+    }
+},
+"rich-text#faQ-content-7": {
+    "props": {
+        "text": "[Faqs](/faq)",
+        "blockClass":["link-politicas","status-active"]
+    }
+},
+"rich-text#faQ-content-8": {
+    "props": {
+        "text": "[Quienes somos](/quienes-somos)",
+        "blockClass":"link-politicas"
+    }
+},
+  // Primera columna de los faqs
+  "flex-layout.col#faq": {
+    "props":{
+      "width":"30%",
+      "blockClass":"columna1"
+    },
+    "children": [
+      "disclosure-layout-group#group"
+    ]
+  },
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#first"
+    ]
+  },
+
+  // primer disclousare
+  "disclosure-layout#first": {
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question1","disclosure-state-indicator"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "FAQ"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  // Segundo disclousare
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question2","disclosure-state-indicator"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "Comprar"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  // tercer discluosarecompra
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question3","disclosure-state-indicator"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      
+    ]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "Politicas de comprar"
+    }
+  },
+  // agrupacion de los items
+  // disclouare dos 
+  "disclosure-layout#fourth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
+  },
+  "disclosure-trigger#fourth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question4","disclosure-state-indicator"]
+  },
+  "disclosure-content#fourth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "Habeas data"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  // columna 2
+  "flex-layout.col#faq1": {
+    "props":{
+      "width":"70%",
+      "blockClass":"columna2"
+    },
+    "children": [
+      "flex-layout.col#devolver1"
+    ]
+  },
+  // contenido del tab 1
+  "flex-layout.col#devolver1": {
+    "children": [
+      /* "rich-text#devolver1",
+      "rich-text#devolver2" */
+      "disclosure-layout#principal1",
+      "disclosure-layout#principal2",
+      "disclosure-layout#principal3",
+      "disclosure-layout#principal4",
+      "disclosure-layout#principal5"
+      
+    ]
+  },
+  // DISCLOSURE principal 1
+  "disclosure-layout#principal1": {
+    "children": ["disclosure-trigger#principal1", "disclosure-content#principal1"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#principal1": {
+    "children": ["rich-text#devolver3"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#principal1": {
+    "children": [
+      "disclosure-layout#mediosPago",
+      "disclosure-layout#puedo-retractar",
+      "disclosure-layout#mensaje-error",
+      "disclosure-layout#pedido-rechazado",
+      "disclosure-layout#clic-comprar",
+      "disclosure-layout#no-talla",
+      "disclosure-layout#lavar-articulo",
+      "disclosure-layout#pregunta",
+      "disclosure-layout#pregunta1",
+      "disclosure-layout#pregunta2",
+      "disclosure-layout#pregunta3",
+      "disclosure-layout#pregunta4",
+      "disclosure-layout#pregunta5"
+    ],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE principal 2
+  "disclosure-layout#principal2": {
+    "children": ["disclosure-trigger#principal2", "disclosure-content#principal2"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#principal2": {
+    "children": ["rich-text#devolver1"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#principal2": {
+    "children": [      
+      "disclosure-layout#pregunta6",
+      "disclosure-layout#pregunta7",
+      "disclosure-layout#pregunta8",
+      "disclosure-layout#pregunta9"
+    ],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE principal 3
+  "disclosure-layout#principal3": {
+    "children": ["disclosure-trigger#principal3", "disclosure-content#principal3"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#principal3": {
+    "children": ["rich-text#devolver2"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#principal3": {
+    "children": [      
+      "disclosure-layout#pregunta10",
+      "disclosure-layout#pregunta11",
+      "disclosure-layout#pregunta12",
+      "disclosure-layout#pregunta13"
+    ],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE principal 4
+  "disclosure-layout#principal4": {
+    "children": ["disclosure-trigger#principal4", "disclosure-content#principal4"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#principal4": {
+    "children": ["rich-text#devolver3"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#principal4": {
+    "children": [      
+      "disclosure-layout#pregunta14",
+      "disclosure-layout#pregunta15",
+      "disclosure-layout#pregunta16",
+      "disclosure-layout#pregunta17",
+      "disclosure-layout#pregunta18",
+      "disclosure-layout#pregunta19"
+    ],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE principal 5
+  "disclosure-layout#principal5": {
+    "children": ["disclosure-trigger#principal5", "disclosure-content#principal5"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#principal5": {
+    "children": ["rich-text#devolver4"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#principal5": {
+    "children": [      
+      "disclosure-layout#pregunta19",
+      "disclosure-layout#pregunta20",
+      "disclosure-layout#pregunta21",
+      "disclosure-layout#pregunta22",
+      "disclosure-layout#pregunta23",
+      "disclosure-layout#pregunta24",
+      "disclosure-layout#pregunta25",
+      "disclosure-layout#pregunta26"
+    ],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE MEDIOS DE PAGO
+  "disclosure-layout#mediosPago": {
+    "children": ["disclosure-trigger#mediosPago", "disclosure-content#mediosPago"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#mediosPago": {
+    "children": ["rich-text#medias"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#mediosPago": {
+    "children": ["rich-text#mediosPago2"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE ME PUEDO RETRACTAR
+  "disclosure-layout#puedo-retractar": {
+    "children": ["disclosure-trigger#puedo-retractar", "disclosure-content#puedo-retractar"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#puedo-retractar": {
+    "children": ["rich-text#devolver6"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#puedo-retractar": {
+    "children": ["rich-text#devolver7"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE PORQUE ME SALE MENSAJE DE ERROR
+  "disclosure-layout#mensaje-error": {
+    "children": ["disclosure-trigger#mensaje-error", "disclosure-content#mensaje-error"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#mensaje-error": {
+    "children": ["rich-text#devolver8"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#mensaje-error": {
+    "children": ["rich-text#devolver9"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE PORQUE ME A SIDO RECHAZADO MI PEDIDO
+  "disclosure-layout#pedido-rechazado": {
+    "children": ["disclosure-trigger#pedido-rechazado", "disclosure-content#pedido-rechazado"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pedido-rechazado": {
+    "children": ["rich-text#devolver10"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pedido-rechazado": {
+    "children": ["rich-text#devolver11"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+   // DISCLOSURE PORQUE NO PASA NADA CUANDO DOY CLIC EN COMPRAR
+   "disclosure-layout#clic-comprar": {
+    "children": ["disclosure-trigger#clic-comprar", "disclosure-content#clic-comprar"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#clic-comprar": {
+    "children": ["rich-text#devolver12"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#clic-comprar": {
+    "children": ["rich-text#devolver13"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE PORQUE NO PUEDO ENCONTRAR MI TALLA
+  "disclosure-layout#no-talla": {
+    "children": ["disclosure-trigger#no-talla", "disclosure-content#no-talla"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#no-talla": {
+    "children": ["rich-text#devolver14"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#no-talla": {
+    "children": ["rich-text#devolver15"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+   // DISCLOSURE CÓMO TENGO QUE LAVAR O LIMPIAR MI ARTÍCULO
+   "disclosure-layout#lavar-articulo": {
+    "children": ["disclosure-trigger#lavar-articulo", "disclosure-content#lavar-articulo"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#lavar-articulo": {
+    "children": ["rich-text#devolver16"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#lavar-articulo": {
+    "children": ["rich-text#devolver17"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta": {
+    "children": ["disclosure-trigger#pregunta", "disclosure-content#pregunta"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta": {
+    "children": ["rich-text#devolver18"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta": {
+    "children": ["rich-text#devolver19"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta1": {
+    "children": ["disclosure-trigger#pregunta1", "disclosure-content#pregunta1"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta1": {
+    "children": ["rich-text#devolver20"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta1": {
+    "children": ["rich-text#devolver21"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta2": {
+    "children": ["disclosure-trigger#pregunta2", "disclosure-content#pregunta2"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta2": {
+    "children": ["rich-text#devolver22"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta2": {
+    "children": ["rich-text#devolver23"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta3": {
+    "children": ["disclosure-trigger#pregunta3", "disclosure-content#pregunta3"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta3": {
+    "children": ["rich-text#devolver24"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta3": {
+    "children": ["rich-text#devolver25"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta4": {
+    "children": ["disclosure-trigger#pregunta4", "disclosure-content#pregunta4"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta4": {
+    "children": ["rich-text#devolver26"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta4": {
+    "children": ["rich-text#devolver27"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta5": {
+    "children": ["disclosure-trigger#pregunta5", "disclosure-content#pregunta5"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta5": {
+    "children": ["rich-text#devolver28"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta5": {
+    "children": ["rich-text#devolver29"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta6": {
+    "children": ["disclosure-trigger#pregunta6", "disclosure-content#pregunta6"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta6": {
+    "children": ["rich-text#devolver30"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta6": {
+    "children": ["rich-text#devolver31"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta7": {
+    "children": ["disclosure-trigger#pregunta7", "disclosure-content#pregunta7"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta7": {
+    "children": ["rich-text#devolver32"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta7": {
+    "children": ["rich-text#devolver33"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta8": {
+    "children": ["disclosure-trigger#pregunta8", "disclosure-content#pregunta8"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta8": {
+    "children": ["rich-text#devolver34"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta8": {
+    "children": ["rich-text#devolver35"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta9": {
+    "children": ["disclosure-trigger#pregunta9", "disclosure-content#pregunta9"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta9": {
+    "children": ["rich-text#devolver36"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta9": {
+    "children": ["rich-text#devolver37"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta10": {
+    "children": ["disclosure-trigger#pregunta10", "disclosure-content#pregunta10"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta10": {
+    "children": ["rich-text#devolver38"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta10": {
+    "children": ["rich-text#devolver39"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta11": {
+    "children": ["disclosure-trigger#pregunta11", "disclosure-content#pregunta11"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta11": {
+    "children": ["rich-text#devolver40"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta11": {
+    "children": ["rich-text#devolver41"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta12": {
+    "children": ["disclosure-trigger#pregunta12", "disclosure-content#pregunta12"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta12": {
+    "children": ["rich-text#devolver42"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta12": {
+    "children": ["rich-text#devolver43"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta13": {
+    "children": ["disclosure-trigger#pregunta13", "disclosure-content#pregunta13"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta13": {
+    "children": ["rich-text#devolver44"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta13": {
+    "children": ["rich-text#devolver45"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta14": {
+    "children": ["disclosure-trigger#pregunta14", "disclosure-content#pregunta14"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta14": {
+    "children": ["rich-text#devolver46"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta14": {
+    "children": ["rich-text#devolver47"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta15": {
+    "children": ["disclosure-trigger#pregunta15", "disclosure-content#pregunta15"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta15": {
+    "children": ["rich-text#devolver48"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta15": {
+    "children": ["rich-text#devolver49"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta16": {
+    "children": ["disclosure-trigger#pregunta16", "disclosure-content#pregunta16"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta16": {
+    "children": ["rich-text#devolver50"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta16": {
+    "children": ["rich-text#devolver51"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta17": {
+    "children": ["disclosure-trigger#pregunta17", "disclosure-content#pregunta17"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta17": {
+    "children": ["rich-text#devolver52"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta17": {
+    "children": ["rich-text#devolver53"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta18": {
+    "children": ["disclosure-trigger#pregunta18", "disclosure-content#pregunta18"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta18": {
+    "children": ["rich-text#devolver54"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta18": {
+    "children": ["rich-text#devolver55"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta19": {
+    "children": ["disclosure-trigger#pregunta19", "disclosure-content#pregunta19"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta19": {
+    "children": ["rich-text#devolver56"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta19": {
+    "children": ["rich-text#devolver57"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta20": {
+    "children": ["disclosure-trigger#pregunta20", "disclosure-content#pregunta20"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta20": {
+    "children": ["rich-text#devolver58"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta20": {
+    "children": ["rich-text#devolver59"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta21": {
+    "children": ["disclosure-trigger#pregunta21", "disclosure-content#pregunta21"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta21": {
+    "children": ["rich-text#devolver60"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta21": {
+    "children": ["rich-text#devolver61"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },// DISCLOSURE 
+  "disclosure-layout#pregunta22": {
+    "children": ["disclosure-trigger#pregunta22", "disclosure-content#pregunta22"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta22": {
+    "children": ["rich-text#devolver62"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta22": {
+    "children": ["rich-text#devolver63"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta23": {
+    "children": ["disclosure-trigger#pregunta23", "disclosure-content#pregunta23"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta23": {
+    "children": ["rich-text#devolver64"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta23": {
+    "children": ["rich-text#devolver65"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta24": {
+    "children": ["disclosure-trigger#pregunta24", "disclosure-content#pregunta24"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta24": {
+    "children": ["rich-text#devolver66"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta24": {
+    "children": ["rich-text#devolver67"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta25": {
+    "children": ["disclosure-trigger#pregunta25", "disclosure-content#pregunta25"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta25": {
+    "children": ["rich-text#devolver68"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta25": {
+    "children": ["rich-text#devolver69"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // DISCLOSURE 
+  "disclosure-layout#pregunta26": {
+    "children": ["disclosure-trigger#pregunta26", "disclosure-content#pregunta26"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-trigger#pregunta26": {
+    "children": ["rich-text#devolver70"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#pregunta26": {
+    "children": ["rich-text#devolver71"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // trigger
+  "rich-text#medias": {
+    "props": {
+      "text": "¿Cuánto tarda la entrega del producto?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  // contenido
+  "rich-text#mediosPago2": {
+    "props": {
+      "text": "la fecha estipulada es de 1 a 3 días hábiles en la página web, pero a veces tarda mas",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+
+  // contenido viejo
+  "rich-text#devolver1": {
+    "props": {
+      "text": "PROCESO DE COMPRA",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver2": {
+    "props": {
+      "text": "MEDIOS DE PAGO",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver3": {
+    "props": {
+      "text": "ENVÍOS",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver4": {
+    "props": {
+      "text": "DEVOLUCIONES",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  
+  "rich-text#devolver6": {
+    "props": {
+      "text": "¿Qué puedo hacer si mi piel reacciona a un producto?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver7": {
+    "props": {
+      "text": "se debe dejar de utilizar el producto y comunicar o se dirigir a un punto de venta, con el producto que le causo reacción y diligenciar un formato de reclamación que se envía a servicio al cliente para una solución",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver8": {
+    "props": {
+      "text": "¿Cómo puedo comprar 3 referencias iguales?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver9": {
+    "props": {
+      "text": "en el carrito de compra donde esta el + agregas más unidades, del mismo producto",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver10": {
+    "props": {
+      "text": "¿Puedo realizar cotizaciones de fórmulas magistrales en línea?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver11": {
+    "props": {
+      "text": "no, solo en nuestras tiendas físicas",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver12": {
+    "props": {
+      "text": "¿Se pueden cancelar los pedidos realizados en línea?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver13": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver14": {
+    "props": {
+      "text": "¿Cómo puedo actualizar mis datos de envió?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver15": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver16": {
+    "props": {
+      "text": "¿La página es segura y mis datos están protegidos?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver17": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver18": {
+    "props": {
+      "text": "¿Los productos cuentan con garantía?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver19": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver20": {
+    "props": {
+      "text": "¿Realizan envíos a todo Colombia?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver21": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },"rich-text#devolver22": {
+    "props": {
+      "text": "¿Por qué me falta un producto en mi compra y no ha llegado?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver23": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver24": {
+    "props": {
+      "text": "¿Dónde puedo colocar una queja de una asesora?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver25": {
+    "props": {
+      "text": "regístrate en la página web, y diligencia el paso de paso de queja/reclamo",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver26": {
+    "props": {
+      "text": "¿Dónde puedo felicitar una asesora?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver27": {
+    "props": {
+      "text": "regístrate en la página web, y diligencia el paso de paso de queja/reclamo, felicitaciones",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver28": {
+    "props": {
+      "text": "¿Cómo puedo estar enterado de los descuentos?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver29": {
+    "props": {
+      "text": "regístrate en la página para estar informado de ofertas",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  // Proceso de compra
+  "rich-text#devolver30": {
+    "props": {
+      "text": "¿Puedo realizar compras desde el exterior?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver31": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver32": {
+    "props": {
+      "text": "¿Cuáles son los pasos para comprar en línea?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver33": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver34": {
+    "props": {
+      "text": "¿Debo registrarme para realizar una compra en línea?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver35": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver36": {
+    "props": {
+      "text": "¿Cómo realizo una compra en www.cutis.com.co?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver37": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  //medios de pago
+  "rich-text#devolver38": {
+    "props": {
+      "text": "¿Se puede utilizar una Gif Card en www.cutis.com.co para realizar el pago en línea de mis productos?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver39": {
+    "props": {
+      "text": "no, solo en nuestras tiendas físicas",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver40": {
+    "props": {
+      "text": "¿Puedo realizar mi compra en línea con pago contra entrega?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver41": {
+    "props": {
+      "text": "aun no tenemos habilitada esta opción",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver42": {
+    "props": {
+      "text": "¿Cuáles son los medios de pago que tienen?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver43": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver44": {
+    "props": {
+      "text": "¿Puedo utilizar varios medios de pago para una compra en línea?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver45": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  //envios
+  "rich-text#devolver46": {
+    "props": {
+      "text": "¿Cómo puedo tener información del estado de mi pedido?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver47": {
+    "props": {
+      "text": "una asesora le brindara esta informacion.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver48": {
+    "props": {
+      "text": "¿Por qué se puede retrasar mi pedido?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver49": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver50": {
+    "props": {
+      "text": "¿Qué debo hacer si aun no he recibido mi pedido?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver51": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver52": {
+    "props": {
+      "text": "¿Qué debo hacer si mi pedido llego incompleto?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver53": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver54": {
+    "props": {
+      "text": "¿Qué debo hacer si me envían el producto equivocado?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver55": {
+    "props": {
+      "text": "si te envían el producto errado, comunícate al WhatsApp de cutis que se encuentra en la parte inferior derecha de la pagina web",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver56": {
+    "props": {
+      "text": "¿Cuál es el costo de los envíos?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver57": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  //devoluciones y reembolsos
+  "rich-text#devolver58": {
+    "props": {
+      "text": "¿Si quiero cambiar mi producto por otro y el que quiero cuesta menos, me hacen el reembolso de dinero?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver59": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver60": {
+    "props": {
+      "text": "¿Cuáles son los requisitos para realizar una devolución?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver61": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver62": {
+    "props": {
+      "text": "¿Qué puedo hacer si mi producto llego en mal estado?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver63": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver64": {
+    "props": {
+      "text": "¿Puedo realizar el cambio de un producto por otro?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver65": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver66": {
+    "props": {
+      "text": "¿Cuánto tiempo se demora tramitar un reembolso de dinero?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver67": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver68": {
+    "props": {
+      "text": "¿Comprando en línea puedo realizar el cambio de productos en tiendas físicas?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver69": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver70": {
+    "props": {
+      "text": "¿Cuánto tiempo tengo para realizar el cambio de un producto?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver71": {
+    "props": {
+      "text": "",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  // tabber 2
+  "tab-content.item#comoComprar": {
+    "children": [
+      "flex-layout.col#devolver1"
+    ],
+    "props": {
+      "tabId": "cambios"
+    }
+  },
+  // tabber 2
+  "tab-content.item#reembolsos": {
+      "children": [
+        "flex-layout.col#devolver1"
+      ],
+      "props": {
+        "tabId": "Reembolsos"
+      }
+  }
+
+}

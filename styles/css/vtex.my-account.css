@@ -1,0 +1,107 @@
+.boxContainerBody{
+    background: white;
+    position: relative;
+    border: 0;
+    border-radius: 5px;
+}
+.boxContainer{
+    border: 0;
+}
+.profileBoxContainer{
+    position: relative;
+}
+.menuLinks{
+    background: white;
+}
+.dataEntryChildren {
+    color: #979797;
+}
+:global(.vtex-account) {
+    padding: 0 100px;
+    position: relative;
+}
+:global(.vtex-account) :global(.vtex-button ){
+    background: #27AFE5;
+    border: 0;
+    transition: 400ms all;
+}
+:global(.vtex-pageHeader-link__container) :global(.vtex-button ){
+    background: transparent !important;
+    border: 0;
+    transition: 400ms all;
+    text-transform: capitalize;
+    color:#27AFE5;
+}
+:global(.vtex-account) :global(.vtex-button ):hover{
+    background: #1B7BA1;
+    border: 0;
+}
+:global(.vtex-button__label ){
+    text-transform: capitalize;
+}
+.boxContainerFooter{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.boxContainerFooter :global(.vtex-button__label){
+    color: #27AFE5;
+    text-transform: capitalize;
+}
+.boxContainerFooter :global(.vtex-button__label)::before{
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(https://cutis.vteximg.com.br/arquivos/editarcutis.png);
+  background-size: 100%;
+}
+.boxContainerFooter :global(.vtex-button){
+    background: transparent;
+}
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button){
+    background: transparent;
+}
+:global(.vtex-my-authentication-1-x-box_footer) :global(.vtex-button__label){
+    color: #27AFE5;
+}
+:global(.vtex-pageHeader__title ){
+    color: #27AFE5;
+}
+:global(.vtex-account__page ){
+    width: 100%;
+}
+:global(.vtex-pageHeader__container) {
+  margin-top: -20px;
+  padding-top: 0;
+}
+.menu {
+    width: 28%;
+}
+.userGreeting {
+  color: #27afe5;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  :global(.vtex-pageHeader__container) {
+    margin-top: 0px !important;
+    padding-top: 0;
+
+  }
+  .link {
+    border-bottom: 1px solid #ece9e9;
+  }
+  .menu {
+    width: 100%;
+    margin: 0;
+    padding: 0 4%;
+}
+    :global(.vtex-account__page ){
+        border: 0;
+        border-radius: 10px;
+        width: 100%;
+    }
+    :global(.vtex-account) {
+        padding: 0 10px;
+    }
+
+}

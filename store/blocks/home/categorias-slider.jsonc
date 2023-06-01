@@ -1,0 +1,417 @@
+{
+    "slider-layout#principalSliderHomeCate": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            // "autoplay":{
+            //     "timeout": 3000,
+            //     "stopOnHover": true
+            // },
+            "infinite": true,
+            "blockClass": "carousel",
+            "showPaginationDots":"mobileOnly",
+            "showNavigationArrows": "desktopOnly"
+        },
+        "children": [
+            "flex-layout.row#categoriaSlide1",
+            "flex-layout.row#categoriaSlide2"
+        ]
+    },
+    // Primer SLIDE
+    "flex-layout.row#categoriaSlide1": {
+        "children": [
+          "flex-layout.col#responsive-slider",
+          "flex-layout.col#categoriaSlide1-2"
+        ],
+        "props": {
+          "blockClass": "slideCategory"
+        }
+    },
+    // contenedor de los responsive
+    "flex-layout.col#responsive-slider": {
+      "children": [
+        "responsive-layout.mobile#categoriaSlider1",
+        "responsive-layout.desktop#categoriaSlider1"
+      ],
+      "props": {
+        "blockClass": "responsiveSlider"
+      }
+    },
+    // estructura mobile
+    "responsive-layout.mobile#categoriaSlider1": {
+      "children": [
+        "flex-layout.row#categoriaSlide1-1-m",
+        "flex-layout.col#categoriaSlide1-1-m"
+      ]
+    },
+    "flex-layout.row#categoriaSlide1-1-m": {
+      "children": [
+          "rich-text#slideCate-title",
+          "rich-text#slideCate-text"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+    },
+    "flex-layout.col#categoriaSlide1-1-m": {
+      "children": [
+          "flex-layout.row#categoriaSlide1-img-COLUMN1"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+    },
+    // estructura para desk
+    "responsive-layout.desktop#categoriaSlider1": {
+      "children": [
+        "flex-layout.col#categoriaSlide1-1"
+      ]
+    },
+    "flex-layout.col#categoriaSlide1-1": {
+        "children": [
+            "rich-text#slideCate-title",
+            "rich-text#slideCate-text",
+            "flex-layout.row#categoriaSlide1-img-COLUMN1"
+        ],
+        "props": {
+          "blockClass": "slideColumn1"
+        }
+    },
+    // columna 1
+    "rich-text#slideCate-title": {
+        "props": {
+          "text": "Conoce nuestras categorías",
+          "blockClass": "tituloSlideCategory"
+        }
+    },
+    "rich-text#slideCate-text": {
+        "props": {
+          "text": "Tenemos los mejores productos para el cuidado y belleza de tu piel",
+          "blockClass": "contenidoSlideCategory"
+        }
+    },
+    // Imagenes columna 1
+    "flex-layout.row#categoriaSlide1-img-COLUMN1": {
+        "children": [
+          "flex-layout.col#imagenCategoria1",
+          "flex-layout.col#imagenCategoria2"
+        ],
+        "props": {
+          "blockClass": "imagesColumn1"
+        }
+    },
+    // imagen uno de categorias
+    "flex-layout.col#imagenCategoria1": {
+      "children": [
+        "image#slide1category-1",
+        "rich-text#tituloSliderCategorias",
+        "image#slide1category-1-hover"
+      ],
+      "props": {
+        "blockClass": "imagenCategoriaColumn"
+      }
+    },
+    "rich-text#tituloSliderCategorias": {
+      "props": {
+        "text": "[Cuidado del rostro](/)",
+        "blockClass": ["categoriasTitulo"]
+      }
+    },
+    "image#slide1category-1": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/categoria-facil.png",
+          "blockClass": ["slideCategoryColumn1","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+  },
+  "image#slide1category-1-hover": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/facial-icono.png",
+        "blockClass": ["hoverImage"],
+        "link":{
+          "url":"/"
+        }
+      }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagenCategoria2": {
+    "children": [
+      "image#slide2category-2",
+      "rich-text#tituloSliderCategorias-2",
+      "image#slide1category-2-hover"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-2": {
+    "props": {
+      "text": "[Cuidado capilar](/)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide2category-2": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/categoria-capilar.png",
+        "blockClass": ["slideCategoryColumn1","bannerSlides"],
+        "link":{
+          "url":"/"
+        }
+      }
+  },
+  "image#slide1category-2-hover": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/capilar-icono.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  // Columna 2
+    "flex-layout.col#categoriaSlide1-2": {
+        "children": [
+          "flex-layout.col#imagen-3"
+        ],
+        "props": {
+          "blockClass": "slideColumn2"
+        }
+    },
+    // imagen dos de categorias
+  "flex-layout.col#imagen-3": {
+    "children": [
+      "image#imageColumn-2",
+      "rich-text#imagen-3",
+      "image#slide1category-3-hover"
+    ],
+    "props": {
+      "blockClass": ["imagenCategoriaColumn","column2categorySlide"]
+    }
+  },
+  "rich-text#imagen-3": {
+    "props": {
+      "text": "[Cuidado corporal](/)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#imageColumn-2": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/principalCategoria.png",
+        "blockClass": ["slideCategoryColumn2","bannerSlides"],
+        "link":{
+          "url":"/"
+        }
+      }
+  },
+  "image#slide1category-3-hover": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/corporal_icon_new.png",
+      "blockClass": ["hoverImage","hoverColumn2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  // SEGUNDA SLIDE
+  "flex-layout.row#categoriaSlide2": {
+    "children": [
+      "flex-layout.col#responsive-slider2",
+      "flex-layout.col#categoriaSlide2-2"
+    ],
+    "props": {
+      "blockClass": "slideCategory"
+    }
+  },
+  // contenedor de los responsive
+  "flex-layout.col#responsive-slider2": {
+    "children": [
+      "responsive-layout.mobile#categoriaSlider2",
+      "responsive-layout.desktop#categoriaSlider2"
+    ],
+    "props": {
+      "blockClass": "responsiveSlider"
+    }
+  },
+  // estructura mobile
+  "responsive-layout.mobile#categoriaSlider2": {
+    "children": [
+      "flex-layout.row#categoriaSlide2-1-m",
+      "flex-layout.col#categoriaSlide2-1-m"
+    ]
+  },
+  "flex-layout.row#categoriaSlide2-1-m": {
+    "children": [
+        "rich-text#slideCate-title",
+        "rich-text#slideCate-text"
+    ],
+    "props": {
+      "blockClass": "slideColumn1"
+    }
+  },
+  "flex-layout.col#categoriaSlide2-1-m": {
+    "children": [
+        "flex-layout.row#categoriaSlide2-img-COLUMN1"
+    ],
+    "props": {
+      "blockClass": "slideColumn1"
+    }
+  },
+  // estructura para desk
+  "responsive-layout.desktop#categoriaSlider2": {
+    "children": [
+      "flex-layout.col#categoriaSlide2-1"
+    ]
+  },
+  "flex-layout.col#categoriaSlide2-1": {
+      "children": [
+          "rich-text#slideCate-title-2",
+          "rich-text#slideCate-text-2",
+          "flex-layout.row#categoriaSlide2-img-COLUMN1"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+  },
+  // columna 1
+  "rich-text#slideCate-title-2": {
+      "props": {
+        "text": "Conoce nuestras categorías",
+        "blockClass": "tituloSlideCategory"
+      }
+  },
+  "rich-text#slideCate-text-2": {
+      "props": {
+        "text": "Tenemos los mejores productos para el cuidado y belleza de tu piel",
+        "blockClass": "contenidoSlideCategory"
+      }
+  },
+  // Imagenes columna 1
+  "flex-layout.row#categoriaSlide2-img-COLUMN1": {
+      "children": [
+        "flex-layout.col#imagenCategoria1-2",
+        "flex-layout.col#imagenCategoria2-2"
+      ],
+      "props": {
+        "blockClass": "imagesColumn1"
+      }
+  },
+  // imagen uno de categorias
+  "flex-layout.col#imagenCategoria1-2": {
+    "children": [
+      "image#slide1category-1slide-2",
+      "rich-text#tituloSliderCategorias-slide2",
+      "image#slide1category-1-hover-slide-2"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-slide2": {
+    "props": {
+      "text": "[Maquillaje Dermocosmético](/maquillaje)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide1category-1slide-2": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/categoria-maquillaje-v2.png",
+        "blockClass": ["slideCategoryColumn1","bannerSlides"],
+        "link":{
+          "url":"/maquillaje"
+        }
+      }
+  },
+  "image#slide1category-1-hover-slide-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/maquillaje-icono-v2.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/maquillaje"
+      }
+    }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagenCategoria2-2": {
+    "children": [
+      "image#slide2category-slide-2",
+      "rich-text#tituloSliderCategorias-slide-2",
+      "image#slide1category-2-hover-slide-2"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-slide-2": {
+    "props": {
+      "text": "[Protección solar](/solar)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide2category-slide-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/categoria-solar-v2.png",
+      "blockClass": ["slideCategoryColumn1","bannerSlides"],
+      "link":{
+        "url":"/solar"
+      }
+    }
+  },
+  "image#slide1category-2-hover-slide-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/solar-icono-v2.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/solar"
+      }
+    }
+  },
+  // Columna 2
+  "flex-layout.col#categoriaSlide2-2": {
+      "children": [
+        "flex-layout.col#imagen-3-2"
+      ],
+      "props": {
+        "blockClass": "slideColumn2"
+      }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagen-3-2": {
+    "children": [
+      "image#imageColumn-2-2",
+      "rich-text#imagen-3-2",
+      "image#slide1category-3-hover-2"
+    ],
+    "props": {
+      "blockClass": ["imagenCategoriaColumn","column2categorySlide"]
+    }
+  },
+  "rich-text#imagen-3-2": {
+    "props": {
+      "text": "[Medicamentos](/medicamentos)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#imageColumn-2-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/categoria-corporal-desk-grande.png",
+      "blockClass": ["slideCategoryColumn2","bannerSlides"],
+      "link":{
+        "url":"/medicamentos"
+      }
+    }
+  },
+  "image#slide1category-3-hover-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/medicamentos-icono-v2.png",
+      "blockClass": ["hoverImage","hoverColumn2"],
+      "link":{
+        "url":"/medicamentos"
+      }
+    }
+  }
+}

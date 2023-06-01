@@ -1,0 +1,329 @@
+{
+
+  "store.custom#tiendas": {
+    "children":[
+      "store.storelocator"
+    ]
+  },
+
+
+
+  // visual titulo, lista de tiendas y mapa
+    "store.storelocator": {
+      "blocks": ["flex-layout.row#title" , "flex-layout.row#container","rich-text#text-ciudades-no","flex-layout.row#contact-center"],
+      "props": {
+        "blockClass": ["localizador-titulo-general"]
+      }
+
+    },
+    // contenedor del titulo en row (fila)
+    "flex-layout.row#title": {
+      "children": ["flex-layout.col#title1"],
+      "props": {
+        "blockClass": ["localizador-titulo-general"]
+      }
+    },
+    //contenedor de lista de tiendas y mapa
+    "flex-layout.row#container": {
+      "children": ["store-list"],
+      "props": {
+        "blockClass": ["localizador-contenedor-store"]
+      }
+    },
+    // contenedor del titulo en col (columna)
+    "flex-layout.col#title1": {
+      "children": ["rich-text#title1","flex-layout.col#stores"],
+      "props": {
+        "blockClass": ["title","localizador-contenedor-store"],
+        "preventVerticalStretch": true
+      }
+    },
+    //Título principal(puede cambiarse desde site editor)
+    "rich-text#title1": {
+      "props": {
+        "text": "### Nuestras Tiendas...",
+        "blockClass": ["title","localizador-contenedor-store"]
+      }
+    },
+    "flex-layout.col#stores": {
+      "children": ["rich-text#selecciona-ciudad",  "rich-text#gps-city", "disclosure-layout#store-city"],
+      "props": {
+        "blockClass": ["listado-tiendas"],
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#selecciona-ciudad": {
+      "props": {
+        "text": "Selecciona la ciudad para ver las diferentes tiendas",
+        "blockClass": ["select-store-text"]
+      }
+    },
+    "rich-text#gps-city": {
+      "props": {
+        "text": "Todas las tiendas",
+        "blockClass": ["select-store-gps"]
+      }
+    },
+      "disclosure-layout#store-city": {
+        "children": ["disclosure-trigger#store-city", "disclosure-content#store-city"],
+        "props": {
+          "blockClass": ["listado-tiendas"],
+          "preventVerticalStretch": true
+        }
+      },
+      "disclosure-trigger#store-city": {
+        "children": ["rich-text#stores"],
+        "props":{
+            "blockClass":["btn-trigger-ciudades"]
+        }
+      },
+      "disclosure-content#store-city": {
+        "children": ["flex-layout.col#stores-list"]
+      },
+      "rich-text#stores": {
+        "props": {
+          "text": "Ciudades",
+          "blockClass": "trigger-ciudades"
+        }
+      },
+      "flex-layout.col#stores-list": {
+        "children": [
+          "rich-text#cali",
+          "rich-text#bogota",
+          "rich-text#palmira",
+          "rich-text#popayan",
+          "rich-text#tulua",
+          "rich-text#buga",
+          "rich-text#Pereira",
+          "rich-text#otras-ciudades",
+          "rich-text#limpiar-filtro"
+        ],
+        "props": {
+          "blockClass": ["localizador-box-store"]
+        }
+      }    
+    ,
+    /* "modal-trigger#otras-ciudades": {
+      "children": [
+        "rich-text#otras-ciudades",
+        "modal-layout#otras-ciudades"
+      ],
+      "props": {
+        "blockClass": "trigger-modal-otras-ciudades"
+      }
+    }, */
+    "flex-layout.col#otras-ciudades": {
+      "children": [
+        "rich-text#otras-ciudades-text",
+        "flex-layout.row#contact-center"
+      ],
+      "props": {
+        "blockClass": "store-otras-ciudades"
+      }
+    },
+    "rich-text#otras-ciudades-text": {
+      "props": {
+        "text": "Si no enuentras tu ciudad , puedes contactarnos a traves de los siguientes medios:"
+      }
+    },
+    "rich-text#cali": {
+      "props": {
+        "text": "Cali"
+      }
+    },   
+    "rich-text#palmira": {
+      "props": {
+        "text": "Palmira"
+      }
+    },
+    "rich-text#popayan": {
+      "props": {
+        "text": "Popayan"
+      }
+    },
+    "rich-text#tulua": {
+      "props": {
+        "text": "Tuluá"
+      }
+    },
+    "rich-text#buga": {
+      "props": {
+        "text": "Buga"
+      }
+    },
+    "rich-text#Pereira": {
+      "props": {
+        "text": "Pereira"
+      }
+    },
+    "rich-text#otras-ciudades": {
+      "props": {
+        "text": "Otras Ciudades"
+      }
+    },
+    "rich-text#bogota": {
+      "props": {
+        "text": "Bogotá"
+      }
+    },
+    "rich-text#limpiar-filtro": {
+      "props": {
+        "text": "Limpiar filtro",
+        "blockClass":"text-limpiar-filtro"
+      }
+    },
+    //listado de tiendas 
+    "store-list": {
+      "props": {
+        /* "filterByTag":"storeCity" */
+      }
+    },
+    //mapa que aprece al dar clic en "más detalles"
+
+  
+
+    "store.storedetail": {
+      "blocks": ["store-list" ,"store-group"]
+    },
+    "store-group": {
+      "children": ["flex-layout.row#containerStore"],
+      "props": {
+        "title": "{storeState} - {storeName}"
+      }
+    }, 
+    "flex-layout.row#containerStore": {
+      "children": ["flex-layout.col#containerStore"],
+      "props": {
+        "blockClass": ["localizador-box-store"]
+      }
+    },
+    "flex-layout.col#containerStore": {
+      "children": ["flex-layout.col#detail", "flex-layout.col#store"],
+      "props": {
+        "blockClass": ["localizador-container-store"]
+      }
+    },
+    "flex-layout.col#detail": {
+      "children": [
+        "store-back-link",
+        "store-name",
+        "store-address",
+        "store-instructions",
+        "rich-text#horario"
+      ],
+      "props": {
+        "width": "40%",
+          "blockClass": ["localizador-detalle"],
+        "preventVerticalStretch": true
+      }
+    },
+    "flex-layout.col#store": {
+      "children": ["store-map"],
+      "props": {
+        "blockClass": ["localizador-store"],
+        "width": "60%"
+      }
+    },
+
+    "store-name": {
+      "props": {
+         "text": "{storeState} - {storeName}"
+      }
+    },
+
+    "store-map": {
+      "props": {
+         "height": "500px"
+      }
+    },
+    "store-hours": {
+      "props": {
+        "label": "Horario:",
+        "format": "12h",
+        "businessHours": [
+          {
+            "dayOfWeek": "Domingo",
+            "openingTime": "11:00am",
+            "closingTime": "5:00pm"
+          },
+          {
+            "dayOfWeek": "Lunes",
+            "openingTime": "11:00am",
+            "closingTime": "6:00pm"
+          },
+          {
+            "dayOfWeek": "Martes",
+            "openingTime": "11:00am",
+            "closingTime": "6:00pm"
+          },
+          {
+            "dayOfWeek": "Miercoles",
+            "openingTime": "11:00am",
+            "closingTime": "6:00pm"
+          },
+          {
+            "dayOfWeek": "Jueves",
+            "openingTime": "11:00am",
+            "closingTime": "6:00pm"
+          },
+          {
+            "dayOfWeek": "Viernes",
+            "openingTime": "11:00am",
+            "closingTime": "6:00pm"
+          },
+          {
+            "dayOfWeek": "Sabado",
+            "openingTime": "11:00am",
+            "closingTime": "5:00pm"
+          }
+        ]
+      }
+    },
+    "store-back-link": {
+      "props": {
+        "blockClass": ["x-close"],
+        "label": "X"
+
+      }
+    },
+    "store-instructions": {
+      "props": {
+        "label": ""
+      }
+    },
+    "rich-text#horario": {
+      "props": {
+        "text": "Lun-Vie 8:00 a.m. a 7:00 p.m. Sab 8:00 a.m. a 2:00 p.m.",
+        "blockClass": ["text-horario"]
+      }
+    
+},
+"rich-text#text-ciudades-no": {
+  "props": {
+    "text": "Si no encuentras tu ciudad puedes ponerte en contacto con nosotros haciendo click en alguno de los siguientes enlaces:",
+    "blockClass": ["text-ciudades-no"]
+  }
+
+},
+"flex-layout.row#contact-center": {
+  "children": ["link#contact-center","link#centro-virtual"],
+  "props": {
+    "blockClass": ["btn-contact-center"]
+  }
+},
+"link#contact-center": {
+  "props": {
+    "blockClass": "store-contact-center",
+    "label": "Contact Center",
+    "href": "https://api.whatsapp.com/send?phone=573232411846&text=Hola!%20deseo%20informacion"
+  }
+},
+"link#centro-virtual": {
+  "props": {
+    "blockClass": "store-contact-center",
+    "label": "Centro virtual",
+    "href": "https://outlook.office365.com/owa/calendar/CUTIS1@cutiscol.com.co/bookings/"
+  }
+}
+
+}

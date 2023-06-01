@@ -1,0 +1,662 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "list-context.image-list#promo",
+      "__fold__.experimentalLazyAssets",
+      "slider-layout#principalSliderHomeCate",
+      "rich-text#shelf-title",
+      "tab-layout#tabsCatego",
+      "rich-text#NUESTRAS-MARCAS",
+      "list-context.image-list#marcas",
+      "responsive-layout.desktop#InfoProduct",
+      "responsive-layout.phone#InfoProduct",
+      "flex-layout.row#vitrinaDestacada",
+      "flex-layout.row#Bannerdos",
+      "rich-text#shelf-tittle-Vitrinafinal",
+      "rich-text#vitrinaRutina",
+      "responsive-layout.desktop#vitrinaTres",
+      "responsive-layout.mobile#vitrinaTres",
+      "info-card#home",
+      "responsive-layout.phone"
+    ]
+  },
+  // banners principales
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height":720,
+      "images": [
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal1-desk.jpg",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal1-mobile.jpg",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal2-desk.jpg",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal2-mobile.jpg",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay":{
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots":"false",
+      "blockClass": ["carousel","principalCarousel"]
+    }
+  },
+  // banners slider descuento
+  "list-context.image-list#promo": {
+    "children": ["slider-layout#promo-images"],
+    "props": {
+      "height":720,
+      "images": [
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/descuentosNewBanner.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-descuento-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-descuento-desk.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-descuento-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#promo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"false",
+      "blockClass": "promo-carousel"
+    }
+  },
+  // titulo principal
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Productos Nuevos",
+      "blockClass": ["shelfTitle","decorativo"]
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+      "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+      "headline": "Fotoprotector ISDIN Fusion Water",
+      "subhead": "El fotoprotector ideal para disfrutar del sol durante las actividades al aire libre.",
+      "callToActionText": "Comprar ahora",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "left"
+    }
+  },
+  // CONTENEDOR FLEX PRODUCTO
+  "responsive-layout.phone#InfoProduct": {
+    "children": ["flex-layout.row#ProductoInfoM"]
+  },
+  "responsive-layout.desktop#InfoProduct": {
+    "children": ["flex-layout.row#ProductoInfo"]
+  },
+
+  // vitrina prodyyucto destacado producto
+  // version Mobile
+  "flex-layout.row#ProductoInfoM": {
+    "children": [
+      "flex-layout.col#ProductoInfoM"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  // contenedor 1
+  "flex-layout.col#ProductoInfoM": {
+    "children": [
+      "flex-layout.row#ImagenesPasos"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  "flex-layout.row#ImagenesPasos": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "flex-layout.row#contenedorRow",
+      "rich-text#infoProductCallAction"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHomeM"
+    }
+  },
+  "flex-layout.row#contenedorRow": {
+    "children": [
+      "flex-layout.col#infoProduct1M",
+      "flex-layout.col#infoProduct2M"
+    ],
+    "props": {
+      "blockClass": "flexContenedor"
+    }
+  },
+  // columna 1
+  "flex-layout.col#infoProduct1M": {
+    "children": [
+      "image#productImageInfo1M"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn1"
+    }
+  },
+  "image#productImageInfo1M": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/imagenbordeada.png",
+      "blockClass": "imgInfoProductM"
+    }
+  },
+  // columna 2
+  "flex-layout.col#infoProduct2M": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "flex-layout.row#productstep1",
+      "flex-layout.row#productstep2",
+      "flex-layout.row#productstep3"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+
+  // estructura para desktop
+  "flex-layout.row#ProductoInfo": {
+    "children": [
+        "flex-layout.col#infoProduct1",
+        "flex-layout.col#infoProduct2",
+        "flex-layout.col#infoProduct3"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  "flex-layout.col#infoProduct1": {
+    "children": [
+      "image#productImageInfo1"
+    ],
+    "props": {
+      "width":"35%",
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#productImageInfo1": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/productoDestacado.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "flex-layout.col#infoProduct2": {
+    "children": [
+      "image#productImageInfo2"
+    ],
+    "props": {
+      "width":"35%",
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#productImageInfo2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/sesvitamin-desk2-1111.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "flex-layout.col#infoProduct3": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "flex-layout.row#productstep1",
+      "flex-layout.row#productstep2",
+      "flex-layout.row#productstep3",
+      "flex-layout.row#productstep4",
+      "rich-text#infoProductCallAction"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "rich-text#infoProductTitle": {
+    "props": {
+      "text": "Protección Solar EUCERIN",
+      "blockClass": ["tituloSlideCategory", "titulosInfoProduct"]
+    }
+  },
+  "flex-layout.row#productstep1": {
+    "children": [
+      "image#step-1",
+      "rich-text#infoProductStep1"
+    ],
+    "props": {
+      "blockClass": ["productStep","step2"]
+    }
+  },
+  "image#step-1": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Paso1New.png",
+      "blockClass": ["stepImagen"],
+      "width":"10%"
+    }
+  },
+  "rich-text#infoProductStep1": {
+      "props": {
+        "text": "Eucerin Sun Oil Control\n Protección Uva, UVB 50+, con ácido anti-brillo, que controla, regula y matifica, ultraligero y de rápido absorción, adecuado para pieles mixtas a grasas.",
+        "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+      }
+  },
+  // imagen dos
+  "flex-layout.row#productstep2": {
+    "children": [
+      "image#step-2",
+      "rich-text#infoProductStep2"
+    ],
+    "props": {
+      "blockClass": ["productStep","step2"]
+    }
+  },
+  "image#step-2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Paso2New.png",
+      "blockClass": ["stepImagen"],
+      "width":"10%"
+    }
+  },
+  "rich-text#infoProductStep2": {
+    "props": {
+      "text": "Eucerin Sun Oil Control color claro\n Protege la piel grasa y con tendencia al acné de los daños inducidos por el sol con la Tecnología Espectral Avanzada y la defensa contra la luz HEVIS para una protección UV muy alta.",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  // imagen tres
+  "flex-layout.row#productstep3": {
+    "children": [
+      "image#step-3",
+      "rich-text#infoProductStep3"
+    ],
+    "props": {
+      "blockClass": ["productStep","step2"]
+    }
+  },
+  "image#step-3": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Paso3New.png",
+      "blockClass": ["stepImagen"],
+      "width":"10%"
+    }
+  },
+  "rich-text#infoProductStep3": {
+    "props": {
+      "text": "Eucerin Sun Antipigmento\n Ayuda a prevenir el foto envejecimiento prematuro, a reducir las manchas y prevenir la reaparición.",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  // imagen cuatro
+  "flex-layout.row#productstep4": {
+    "children": [
+      "image#step-4",
+      "rich-text#infoProductStep4"
+    ],
+    "props": {
+      "blockClass": ["productStep","step2"]
+    }
+  },
+  "image#step-4": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/icono.png",
+      "blockClass": ["stepImagen"],
+      "width":"10%"
+    }
+  },
+  "rich-text#infoProductStep4": {
+    "props": {
+      "text": "Eucerin Sun Anti- edad\n Tecnología Hyaluron con cadena corta y larga de ácido hialurónico, que rellena tanto las arrugas profundas como las superficiales, con acción matificante, adecuado para pieles maduras",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  "rich-text#infoProductCallAction": {
+    "props": {
+      "text": "[Comprar producto ahora](/eucerin%20sun?_q=eucerin%20sun&map=ft)",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  // Vitrinas en categoria destacada
+  "flex-layout.row#vitrinaDestacada": {
+    "children": [
+        "flex-layout.col#vitrinaDestacada1",
+        "flex-layout.col#vitrinaDestacada2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1-1"
+    }
+  },
+  "flex-layout.col#vitrinaDestacada1": {
+    "children": [
+      "responsive-layout.desktop#imagenDestacada",
+      "responsive-layout.mobile#imagenDestacadaM"
+    ],
+    "props": {
+      "width":"20%",
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#vitrinaDestacada1": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/cuidadoPiel-1.png",
+      "blockClass": "cuidadoPiel"
+    }
+  },
+  "image#vitrinaDestacada1M": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Rectangle-49.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "responsive-layout.desktop#imagenDestacada": {
+    "children": ["image#vitrinaDestacada1"]
+  },
+  "responsive-layout.mobile#imagenDestacadaM": {
+      "children": ["image#vitrinaDestacada1M"]
+  },
+  "flex-layout.col#vitrinaDestacada2": {
+    "children": [
+      "rich-text#vitrinaDestacada1",
+      "rich-text#vitrinaDestacada2",
+      "list-context.product-list#destacados"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"79%",
+      "blockClass": ["column2vitrinaDestacado2"]
+    }
+  },
+  "rich-text#vitrinaDestacada1": {
+    "props": {
+      "text": "Productos para cuidar tu piel",
+      "blockClass": ["tituloSlideCategory", "tituloVitrinaDestacada"]
+    }
+  },
+  "rich-text#vitrinaDestacada2": {
+    "props": {
+      "text": "Conoce todos nuestros productos para el cuidado facial",
+      "blockClass": ["contenidoSlideCategory","vitrinaDestacada"]
+    }
+  },
+  "list-context.product-list#destacados": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-destacados"]
+  },
+  "slider-layout#demo-destacados": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": ["shelf","destacados"],
+        "showPaginationDots":"mobileOnly",
+        "showNavigationArrows": "desktopOnly"
+      }
+  },
+  // BANNER DOS 
+  "flex-layout.row#Bannerdos": {
+    "children": [
+      "flex-layout.col#Bannerdos"
+    ],  
+    "props": {
+      "blockClass": "vitrinadestacada1-1"
+    }
+  },
+  "flex-layout.col#Bannerdos": {
+    "children": [
+      "responsive-layout.desktop#bannerdos",
+      "responsive-layout.phone#bannerDosm"
+    ],  
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "responsive-layout.desktop#bannerdos": {
+    "children": ["slider-layout#banner2"]
+  },
+  "slider-layout#banner2": {
+    "props": {
+      "height": 720,
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner2Carousel",
+      "showPaginationDots":"false",
+      "showNavigationArrows":"mobileOnly"
+    },
+    "children": ["image#bannerdos-1","image#bannerdos-2"]
+  },
+  "image#bannerdos-1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/Banner2-1.png",
+      "blockClass": ["imgBanner-2","imagen2-1"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-2": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-desk-new.png",
+      "blockClass": ["imgBanner-2","imagen2-2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "responsive-layout.phone#bannerDosm": {
+    "children": ["slider-layout#banner2M"]
+  },
+  "slider-layout#banner2M": {
+    "props": {
+      "height": 720,
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner2Carousel",
+      "showPaginationDots":"false",
+      "showNavigationArrows":"mobileOnly"
+    },
+    "children": ["image#bannerdos-1M","image#bannerdos-2M"]
+  },
+  "image#bannerdos-1M": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-mobile-new.png",
+      "blockClass": ["imgBanner-2","imagen2-1"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-2M": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-mobile-new.png",
+      "blockClass": ["imgBanner-2","imagen2-2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#shelf-tittle-Vitrinafinal": {
+    "props": {
+      "text": "## KITS destacados",
+      "blockClass": ["shelfTitle","decorativo"]
+    }
+  },
+  "rich-text#vitrinaRutina": {
+    "props": {
+      "text": "Conoce todos nuestros productos para el cuidado facial",
+      "blockClass": ["contenidoSlideCategory","vitrinaRutina"]
+    }
+  },
+  // VITRINA TRES PRODUCTOS
+  "responsive-layout.desktop#vitrinaTres": {
+    "children": ["flex-layout.row#vitrinasTres"]
+  },
+
+  "flex-layout.row#vitrinasTres": {
+    "children": [
+      "flex-layout.col#vitrina1",
+      "flex-layout.col#vitrina2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "flex-layout.col#vitrina1": {
+    "children": [
+      "list-context.product-list#vitrineDest3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"50%",
+      "blockClass": ["column2vitrinaDestacado2","vitrinaGrande"]
+    }
+  },
+  "list-context.product-list#vitrineDest3": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest"]
+  },
+  "slider-layout#demo-vitrine-dest": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": ["shelf","vitrinaGigante"],
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  },
+  "flex-layout.col#vitrina2": {
+    "children": [
+      "list-context.product-list#vitrineDest3-2",
+      "list-context.product-list#vitrineDest3-3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"50%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "list-context.product-list#vitrineDest3-2": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest-2"]
+  },
+  "slider-layout#demo-vitrine-dest-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "nerver"
+    }
+  },
+  "list-context.product-list#vitrineDest3-3": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest-3"]
+  },
+  "slider-layout#demo-vitrine-dest-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  },
+  // Vitrina tres mobile
+  "responsive-layout.mobile#vitrinaTres": {
+    "children": ["shelf#mobileVitrina-1","list-context.product-list#mobileDest2"]
+  },
+  "shelf#mobileVitrina-1": {
+    "blocks": ["product-summary.shelf#2"],
+    "props": {
+      "id": "coleccion7",
+      "productList": {
+        "maxItems": 1,
+        "itemsPerPage": 1,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "showPaginationDots": "never"
+      },
+      "blockClass": "mobileVitrinaTres"
+    }
+  },
+  "list-context.product-list#mobileDest2": {
+    "blocks": ["product-summary.shelf#3"],
+    "children": ["slider-layout#mobileDest2"]
+  },
+  "slider-layout#mobileDest2": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": ["shelf","horizontalVitrine"],
+        "showPaginationDots":"mobileOnly",
+        "showNavigationArrows": "never"
+      }
+  }
+}

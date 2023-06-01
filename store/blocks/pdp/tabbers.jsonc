@@ -1,0 +1,88 @@
+{
+    "tab-layout#product": {
+        "children": [
+          "tab-list#product",
+          "tab-content#product"
+        ],
+          "props": {
+            "blockClass": "product",
+            "defaultActiveTabId": "product2"
+          }
+    },
+    "tab-list#product":{
+        "children":[
+            "tab-list.item#product1",
+            "tab-list.item#product2"
+        ]
+    },
+    "tab-list.item#product1":{
+        "props":{
+        "tabId": "product2",
+        "label": "Descripción",
+        "blockClass": "descript"
+        }
+    },
+    "tab-list.item#product2":{
+        "props":{
+        "tabId": "product1",
+        "label": "Detalles",
+        "blockClass": "detail"
+        }
+    },
+    //contenido de los tabbers
+    "tab-content#product":{
+        "children":[
+        "tab-content.item#product1",
+        "tab-content.item#product2"
+        ],
+        "props": {
+        "blocblockClass": "productContent"
+        }
+    },
+    //contenido del tabber 1
+    "tab-content.item#product1": {
+        "children": [
+        "flex-layout.row#product1"
+        ],
+        "props": {
+        "tabId": "product2"
+        }
+    },
+    "flex-layout.row#product1":{
+        "children": [
+        "flex-layout.col#productEsepecificacion"
+        ],
+        "props":{
+        "tabId": "product2",
+        "blockClass": "InformacionDos"
+        }
+    },
+    "flex-layout.col#productEsepecificacion":{
+        "children": [
+            "flex-layout.row#description"
+        ],
+        "props":{
+        "blockClass": "infoPrimerTab"
+        }
+    },  
+    //Contenido del segundo tabber
+    "tab-content.item#product2": {
+        "children": [
+            "flex-layout.row#product"
+        ],
+        "props": {
+            "tabId": "product1"
+        }
+    },
+    "flex-layout.row#product": {
+        "children": [
+            "product-specification-group#table"
+        ]
+      },
+      "product-specifications#product": {
+        "props": {
+          "blockClass":"table",
+          "collapsible": "never"
+        }
+    }
+}

@@ -1,0 +1,288 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#columnasSticky"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#footer-0-desktop",
+      "social-networks",
+      "flex-layout.col#footer-1-desktop"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#footer-0-desktop": {
+    "children": [
+      "image#logoNews",
+      "tab-layout#home",
+      "flex-layout.row#footer-2-desktop"
+    ],
+    "props": {
+      "blockClass": ["firstColumn"]
+    }
+  },
+  "flex-layout.col#footer-1-desktop": {
+    "children": [
+      "image#logoNews",
+      "rich-text#tituloNewsletter",
+      "newsletter-form#popUP"
+    ],
+    "props": {
+      "blockClass": "column-newsletter"
+    }
+  },
+  "rich-text#tituloNewsletter": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Suscríbete gratis y obtén todos nuestros beneficios",
+      "blockClass": "tituloNewsletter"
+    }
+  },
+  "newsletter-form#popUP":{
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit",
+      "newsletter-checkbox-confirmation"
+    ],
+    "props":{
+      "blockClass":"NewsletterPopUp"
+    }
+  },
+  "image#logoNews": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/LogoNews.png",
+      "blockClass": ["imgfooter"]
+    }
+  },
+  "newsletter-submit":{
+    "props":{
+      "submitButtonLabel":"Enviar"
+    }
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"Correo electronico"
+    }
+  },
+  "newsletter-checkbox-confirmation":{
+    "props":{
+      "checkboxLabel":"Si, quiero recibir correos electrónicos sobre productos, noticias y más de Cutis"
+    }
+  },
+  //Tap producto
+  "tab-layout#home": {
+    "children": [
+      "flex-layout.row#tabbersFooter"
+    ],
+      "props": {
+        "blockClass": "home",
+        "defaultActiveTabId": "home3"
+      }
+    },
+    "flex-layout.row#tabbersFooter": {
+      "children": [
+        "tab-list#home",
+        "tab-content#home"
+      ],
+      "props": {
+        "blockClass": "tabbersFooter"
+      }
+    },
+    "tab-list#home":{
+      "children":[
+        "tab-list.item#home2",
+        "tab-list.item#home3",
+        "tab-list.item#home4"
+      ],
+      "props":{
+        "blockClass": "tabbersHome"
+      }
+    },
+    "tab-list.item#home2":{
+      "props":{
+        "id": "tab1",
+        "tabId": "home2",
+        "label": "Sobre Nosotros",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-list.item#home3":{
+      "props":{
+        "id": "tab2",
+        "tabId": "home3",
+        "label": "Categorías",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-list.item#home4":{
+      "props":{
+        "id": "tab3",
+        "tabId": "home4",
+        "label": "Más Información",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-content#home":{
+      "children":[
+        "tab-content.item#home2",
+        "tab-content.item#home3",
+        "tab-content.item#home4"
+      ]
+    },
+    "tab-content.item#home2": {
+      "children": [
+        "vtex.menu@2.x:menu#quienes-somos"
+      ],
+      "props": {
+        "tabId": "home2",
+        "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#home3": {
+      "children": [
+        "vtex.menu@2.x:menu#Products",
+        "vtex.menu@2.x:menu#footer-bags"
+      ],
+      "props": {
+        "tabId": "home3",
+        "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#home4": {
+      "children": [
+        "vtex.menu@2.x:menu#mas-info",
+        "vtex.menu@2.x:menu#mas-info-2"
+      ],
+      "props": {
+        "tabId": "home4", 
+        "blockClass": "footersColumn"
+      }
+    },
+  "social-networks": {
+    "props": {
+      "orientation": "vertical",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/Cutisdrogueria/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/cutisdrogueria/?hl=es"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://co.linkedin.com/company/cutis-sa"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/channel/UC970jb0vA_GCMNwjgDzuWCQ"
+        }
+      ]
+    }
+  },
+  // llamados para el institucional
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["rich-text#footer-1","rich-text#footer-2","rich-text#footer-3"/* ,"rich-text#footer-4" */],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer-1": {
+    "props": {
+      "text": "[Términos y condiciones](/terminos-y-condiciones)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-2": {
+    "props": {
+      "text": "[Protección de datos](/proteccion-datos)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-3": {
+    "props": {
+      "text": "[Politicas de privacidad](/politica-privacidad)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-4": {
+    "props": {
+      "text": "[Acceso corporativo](/accesos-corporativos)",
+      "blockClass": "footer"
+    }
+  },
+  // flex row medios de pagos
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#reservados","image#hechopor", "image#medios"],
+    "props": {
+      "blockClass": "mediosPagos"
+    }
+  },
+  "rich-text#reservados": {
+    "props": {
+      "text": "Todos los derechos reservados",
+      "blockClass": "footer"
+    }
+  },
+  "image#hechopor": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/hechopor.png",
+      "blockClass": ["Hechopor"]
+    }
+  },
+  "image#medios": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/footer-general-pagos.png",
+      "blockClass": ["pagosMedios"]
+    }
+  },
+  // sticky footer para whastApp y descuento
+  "flex-layout.row#columnasSticky":{
+    "props":{
+        "blockClass": "bannersFooter"
+    },
+    "children": [
+      "flex-layout.col#columnasSticky"
+    ]
+  },
+  "flex-layout.col#columnasSticky":{
+    "props":{
+      "blockClass": "bannersFooter"
+    },
+    "children": [
+      "image#banner-desct-1",
+      "image#banner-whats"
+    ]
+  },
+  "image#banner-desct-1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannergratis.png",
+      "link":{
+        "url":"https://api.whatsapp.com/send?phone=573505388657",
+        "newTab":true
+      }
+    }
+  },
+  "image#banner-whats": {
+    "props": {
+      "blockClass":"Whast",
+      "src": "https://cutis.vteximg.com.br/arquivos/bi_whatsapp.png",
+      "link":{
+        "url":"https://api.whatsapp.com/send?phone=573505388657",
+        "newTab":true
+      }
+    }
+  }
+}

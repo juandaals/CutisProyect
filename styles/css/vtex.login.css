@@ -1,0 +1,413 @@
+.label::before{
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/nuevoLogoUserAzul.png) no-repeat;
+    background-size: 76%;
+    background-position: center;
+    font-size: 10px;
+    display: block;
+    width: 24px;
+    height: 26px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 5px;
+    margin: auto;
+}
+.label::after{
+    content: "Mi cuenta";
+    font-size: 15px;
+    color: black;
+}
+:global(.vtex-account__order-details) img[alt="EFECTY"]{
+    display: none;
+}
+:global(.vtex-account__order-details) > div section section button{
+    display: none;
+}
+.label {
+    font-size: 0;
+    display: block;
+    justify-content: flex-start;
+    text-transform: initial;
+    align-items: center;
+}
+.label:hover {
+    background: transparent;
+}
+.content--loginOptions {
+    display: none;
+}
+.box {
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label)  {
+    padding: 0 !important;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label {
+    padding: 10px 19px 10px 19px;
+    margin-left: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label {
+    background: #F1F1F1;
+    border-radius: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label::after{
+    color: #27AFE5;
+}
+:global(.vtex-flex-layout-0-x-flexRow):global(.vtex-flex-layout-0-x-flexRow--contacto-form-4) :global(.vtex-flex-layout-0-x-flexRowContent):global(.vtex-flex-layout-0-x-flexRowContent--contacto-form-4) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+    margin-left: 19px;
+    width: 50% !important;
+}
+@media (min-width: 1900px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+        width: 50% !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(1){
+        width: 10% !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(3),
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(4),
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(5),
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(6){
+        width: 10% !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(7){
+        width: 2% !important;
+    }
+}
+.contentFormVisible {
+    width: 71%;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+.options {
+    min-width: 100%;
+}
+.content--emailAndPassword {
+    display: block;
+    position: relative;
+    background: #F7F9FB;
+}
+.formTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 53px 0;
+    color: #363636;
+}
+.forgotPasswordLink {
+    color: #808080;
+    text-decoration: underline;
+}
+.inputContainer {
+    padding: 0 40px;
+}
+.formLinkContainer {
+    padding:0 40px ;
+}
+.formFooter {
+    padding: 22px 40px;
+}
+.formFooter :global(.vtex-button){
+    background: #27AFE5;
+    height: 50px;
+    border: 0;
+    transition: 400ms all;
+}
+.dontHaveAccount{
+    color: #808080;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.content--emailAndPassword .formFooter :global(.vtex-button__label){
+    font-size: 0 !important;
+    display: none;
+}
+.content--emailAndPassword .formFooter :global(.vtex-button)::before{
+    content: "Iniciar sesión";
+    font-size: 20px;
+    text-transform: initial;
+}
+.formFooter :global(.vtex-button):hover{
+    background: #1B7BA1;
+}
+.optionsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleOptionBtn .oauthLabel{
+    display: none;
+}
+.facebookOptionBtn .oauthLabel{
+    display: none;
+}
+.accessCodeOptionBtn :global(.vtex-button){
+    width: 68px;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.inputContainer {
+    margin-bottom: 20px;
+}
+.inputContainer :global(.vtex-styleguide-9-x-input){
+    padding: 10px 5px;
+}
+.loginOptionsContainer{
+    position: absolute;
+    bottom: -62px;
+    width: 96%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.loginOptionsContainer .formTitle{
+    margin: 20px 0 0 0;
+}
+.optionsSticky{
+    width: 32%;
+    min-width: 69%;
+}
+.optionsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.optionsListItem {
+    width: 33%;
+}
+.optionsListItemContainer {
+    display: none;
+}
+.accessCodeOptionBtn :global(.vtex-button)::before{
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/correo.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 0px;
+}
+.googleOptionBtn :global(.vtex-button)::before{
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/flat-color-icons_google.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 0px;
+    margin: 0 auto;
+}
+.facebookOptionBtn :global(.vtex-button)::before{
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/facebookAzul.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 0px;
+    margin: 0 auto;
+}
+.accessCodeOptionBtn :global(.vtex-button__label){
+    font-size: 0;
+    display: none;
+}
+.googleOptionBtn :global(.vtex-button__label){
+    font-size: 0;
+    display: none;
+}
+.facebookOptionBtn :global(.vtex-button__label){
+    font-size: 0;
+    display: none;
+}
+.button :global(.vtex-button){
+    border: 0;
+}
+
+:global(.vtex-button):hover{
+    background: transparent;
+}
+.content--beginCreatePass {
+    min-height: 100%;
+    background: transparent;
+}
+.content--beginCreatePass .contentFormVisible {
+    width: 83%;
+}
+.content--beginCreatePass .formFooter {
+    padding: 24px 40px;
+}
+.content--beginCreatePass .optionsListItem:nth-child(2){
+    display: none;
+}
+.content--beginCreatePass .optionsListItem:last-child{
+    display: none !important;
+}
+.content--beginCreatePass .loginOptionsContainer{
+    bottom: -13px;
+}
+.content--emailVerification {
+    background: transparent;
+}
+.content--emailVerification .contentFormVisible{
+    width: 83%;
+}
+.content--emailVerification .formFooter {
+    padding: 24px 40px;
+}
+.content--emailVerification .optionsListItem:nth-child(1){
+    display: none;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button){
+    background: #27AFE5;
+    transition: 400ms all;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 0 !important;
+    border: 0;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button):hover{
+    background: #1B7BA1;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button__label){
+    padding: 6px 10px;
+}
+:global(.vtex-product-comparison-0-x-productSelectorContainer ) :global(.vtex-checkbox__input)[value="true"]::before{
+    background: url(/Arquivos/compararHoverBlue.png) no-repeat;
+    background-size: 100%;
+}
+.contentAlwaysWithOptions {
+    background: transparent;
+}
+
+.profile {
+    font-size: 15px;
+    text-transform: initial;
+    margin-top: 2px;
+}
+.container {
+    float: inherit;
+    justify-content: center;
+}
+:global(.vtex-search-result-3-x-orderByOptionsContainer) :global(.vtex-search-result-3-x-orderByOptionItem):nth-child(2){
+    font-size: 0%;
+}
+:global(.vtex-search-result-3-x-orderByOptionsContainer) :global(.vtex-search-result-3-x-orderByOptionItem):nth-child(2)::before{
+    content: "Los más vendidos";
+    font-size: 1rem;
+}
+/* free shiping */
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-freigthScaleContainer){
+    box-shadow: 0 0 0 0;
+    padding: 0 10px;
+    border: 0;
+
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-barContainer){
+    background: #27AFE5;
+    border: 1px solid #d3d3d3;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-text1){
+    display: none;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-sliderText){
+    text-align: left;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-currencyDecimal){
+    display: none;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-currencyFraction){
+    display: none;
+}
+.inputContainer div div span {
+    color: red;
+}
+.eyeSightIcon{
+    color: gray;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--comparison-page) > div:nth-child(2) {
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderHeaderValue) div{
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderBody) div:last-child a svg{
+    display: none;
+}
+.profile:hover :global(.vtex-flex-layout-0-x-flexColChild--login):last-child{
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderHeader) div:last-child div:last-child span{
+    color: white !important;
+}
+:global(.vtex-my-orders-app-3-x-orderHeader) div:last-child div:last-child div{
+    background: #808080;
+}
+/* :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+    content: "";
+    background: url(/arquivos/Paso2New.png) no-repeat;
+    background-size: 100%;
+    width: 37px;
+    height: 38px;
+    margin-right: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+  content: "";
+  background: url(/arquivos/Paso1New.png) no-repeat;
+  background-size: 100%;
+  width: 37px;
+  height: 38px;
+  margin-right: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(5) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+    content: "";
+    background: url(/arquivos/icono.png) no-repeat;
+    background-size: 100%;
+    width: 37px;
+    height: 38px;
+    margin-right: 10px;
+} */
+
+@media (max-width: 600px) {
+    .formTitle {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .contentFormVisible {
+        width: 100%;
+    }
+    :global(.vtex-flex-layout-0-x-flexRow):global(.vtex-flex-layout-0-x-flexRow--contacto-form-4) :global(.vtex-flex-layout-0-x-flexRowContent):global(.vtex-flex-layout-0-x-flexRowContent--contacto-form-4) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+        margin-left: 0px;
+        width: 100% !important;
+    }
+    :global(.vtex-stack-layout-0-x-stackItem--nocheDiaFlag){
+        padding: 100% 0 0 0 !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+        width: 43px;
+        height: 38px;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+      width: 43px;
+      height: 38px;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(5) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+        width: 43px;
+        height: 38px;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--productInfo2){
+        height: 38px !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--productInfo2):first-child{
+        height: 20px !important;
+    }
+}

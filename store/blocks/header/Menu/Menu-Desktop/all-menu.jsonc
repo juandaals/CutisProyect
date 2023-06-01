@@ -1,0 +1,108 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu"
+    },
+    "children": [
+      "menu-item#category",
+      "menu-item#marcas",
+      "menu-item#category-kits",
+      "menu-item#category-medicamentos",
+      "menu-item#category-ofertas" 
+    ]
+  },
+  //Menu principal Items 
+  "menu-item#category": {
+    "props": {
+        "id": "menu-item-category",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass":["menuPrinItems","subMenuPrinItems"],
+        "itemProps": {
+        "type": "internal",
+        // "href": "/",
+        "noFollow": false,
+        "tagTitle": "Categorias",
+        "text": "Categorías"
+        }
+    },
+    "blocks": [
+        "vtex.menu@2.x:submenu#category-apparel"
+    ]
+  },
+  "menu-item#marcas": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":["menuPrinItems","subMenuPrinItems"],
+      "itemProps": {
+        "type": "internal",
+        // "href": "#",
+        "noFollow": true,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#more"
+    ]
+  },
+  "menu-item#category-kits": {
+    "props": {
+        "id": "menu-item-category-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass":["menuPrinItems"],
+        "itemProps": {
+        "type": "internal",
+        "href": "/kit",
+        "noFollow": false,
+        "tagTitle": "Kits",
+        "text": "Kits"
+        }
+    }
+  },
+  "menu-item#category-medicamentos": {
+    "props": {
+        "id": "menu-item-category-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass":["menuPrinItems","subMenuPrinItems"],
+        "itemProps": {
+        "type": "internal",
+        "href": "/medicamentos",
+        "noFollow": false,
+        "tagTitle": "Medicamentos",
+        "text": "Medicamentos"
+        }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#medicamentos"
+    ]
+  },
+  "menu-item#category-ofertas": {
+    "props": {
+        "id": "menu-item-category-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass":["menuPrinItems","subMenuPrinItems","ofertasLink"],
+        "itemProps": {
+          "type": "internal",
+          "href": "/145?map=productClusterIds&order=",
+          "noFollow": false,
+          "tagTitle": "Ofertas",
+          "text": "Ofertas"
+        }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#ofertas"
+    ]
+  }
+}

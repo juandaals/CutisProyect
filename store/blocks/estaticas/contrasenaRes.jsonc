@@ -1,0 +1,203 @@
+{
+    "store.custom#contrasena": {
+        "children": [
+            "image#contrasenaImg",
+            "rich-text#contrasena",
+            "flex-layout.row#contrasena"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#contrasena": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## Restablecer contraseñas"
+        }
+    },
+    "image#contrasenaImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#contrasena": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+            "flex-layout.col#estaticas",
+          "flex-layout.col#contrasena-1"
+        ]
+    },
+     // Primera columna de los contrasenas
+     "flex-layout.col#contrasena": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#contrasena"
+        ]
+    },
+    "disclosure-layout-group#contrasena": {
+        "children": [
+            "disclosure-layout#derechocontrasena"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechocontrasena": {
+        "children": ["disclosure-trigger#derechocontrasena", "disclosure-content#derechocontrasena"]
+    },
+    "disclosure-trigger#derechocontrasena": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#contrasena-titulo"]
+    },
+    "disclosure-content#derechocontrasena": {
+        "props": {
+            "blockClass": "politicas-content"
+        },
+        "children": ["rich-text#contrasena-content"]
+    },
+    "rich-text#contrasena-titulo": {
+        "props": {
+            "text": "Restablecer contraseña"
+        }
+    },
+    "rich-text#contrasena-content": {
+        "props": {
+            "text": ""
+        }
+    },
+    // columna 2
+    "flex-layout.col#contrasena-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#contrasenaContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#contrasenaContent": {
+        "children": [
+            "rich-text#contrasena1",
+            "rich-text#contrasena2",
+            "rich-text#contrasena3",
+            "rich-text#contrasena4",
+            "rich-text#contrasena5",
+            "rich-text#contrasena6",
+            "rich-text#contrasena7",
+            "rich-text#contrasena8",
+            "rich-text#contrasena9",
+            "rich-text#contrasena10"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "rich-text#contrasena1": {
+        "props": {
+            "text": "Para reestablecer su contraseña debe realizar los siguientes pasos:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena2": {
+        "props": {
+            "text": "Paso 1",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena3": {
+        "props": {
+            "text": "- Ingresar al en lance www.cutis.com.co/login",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena4": {
+        "props": {
+            "text": "-  Dar click en olvide mi contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena5": {
+        "props": {
+            "text": "Paso 2",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena6": {
+        "props": {
+            "text": "-  Una vez realizado el cambio de contraseña desde el link enviado al correo ingresar nuevamente a www.cutis.com.co/login",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena7": {
+        "props": {
+            "text": "-  Ingresar con su correo electrónico y nueva contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena8": {
+        "props": {
+            "text": "-   Disfrutar de todos nuestros productos",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena9": {
+        "props": {
+            "text": "Paso 3",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena10": {
+        "props": {
+            "text": "- Ingresar su correo electrónico para enviarle un correo electrónico donde podrá reestablecer su contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "info-card#contrasena-1": {
+        "props": {
+          "id": "info-card-contrasena-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "right"
+        }
+    },
+    "info-card#contrasena-2": {
+        "props": {
+          "id": "info-card-hcontrasena-1ome",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "left"
+        }
+    },
+    "info-card#contrasena-3": {
+        "props": {
+          "id": "info-card-contrasena-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "right"
+        }
+    }
+}

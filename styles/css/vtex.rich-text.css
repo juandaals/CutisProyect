@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+.paragraph--tituloNewsletter{
+  color: #27AFE5;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* 404 estilso */
+.link--category-404-item{
+  text-decoration: none;
+  color: #808080;
+}
+.paragraph--category-404-item{
+  padding: 7px 40px;
+  border: 1px solid #E7EEF1;
+  border-radius: 3px;
+  text-align: center;
+  transition: 400ms all;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--categoryCarousel-404){
+  padding: 0 100px;
+}
+.container--category-404-item {
+  width: 100%;
+  margin: 0 4px;
+}
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-404 ){
+  margin-bottom: 30px;
+}
+:global(.vtex-store-components-3-x-infoCardCallActionContainer--info-card-404 ){
+  display: none;
+}
+:global(.vtex-store-components-3-x-infoCardContainer--info-card-404 ){
+  padding: 60px 0;
+}
+:global(.vtex-store-components-3-x-infoCardSubhead--info-card-404 ){
+  color: white;
+}
+.wrapper--category-404-item{
+  width: 100%;
+}
+.paragraph--category-404-item:hover{
+  background: #27AFE5;
+  border: 0;
+}
+.paragraph--category-404-item:hover .link--category-404-item{
+  color: white;
+}
+.paragraph--tituloSlideCategory{
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 0;
+  color: gray;
+}
+.heading--shelfTitle {
+  color: #27AFE5;
+  font-size: 35px;
+  font-weight: bold;
+}
+.paragraph--infoProductContent{
+  text-align: left;
+  line-height: 20px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+.container--infoProductContent {
+  justify-content: flex-start;
+}
+.container--titulosInfoProduct {
+  justify-content: flex-start;
+}
+.wrapper--titulosInfoProduct .paragraph {
+  margin-bottom: 0px;
+}
+.link--infoProductContent{
+  padding: 10px 45px;
+  background: #343434;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 28px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  transition: 400ms all;
+}
+.link--infoProductContent:hover{
+  background: #27AFE5;
+  color: white;
+}
+.wrapper--tituloVitrinaDestacada .paragraph{
+  margin-bottom: 0px;
+}
+.wrapper--vitrinaDestacada .paragraph{
+  font-size: 15px;
+}
+.paragraph--tituloFiltro{
+  margin: 0;
+}
+.container--tituloFiltro {
+  justify-content: center;
+  align-items: center;
+}
+.paragraph--layout-option{
+  display: none;
+}
+.paragraph--tituloCheckout{
+  padding: 0 55px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #363636;
+  text-align: left;
+}
+.container--tituloFiltro::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/filtrosazul.png) no-repeat;
+  background-size: 100%;
+  font-size: 10px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-right: 10px;
+}
+.wrapper--tituloFiltro2 .paragraph--tituloFiltro{
+  font-size: 23px;
+  color:#27AFE5;
+}
+
+.paragraph--tituloOrderplaced{
+  color: #363636;
+  font-size: 25px;
+  font-weight: bold;
+}
+.paragraph--tituloOrderplaced{
+  margin-top: 70px;
+}
+.container--link-politicas{
+  margin-bottom: 20px;
+  display: flex;
+  background: #fff;
+  height: 80%;
+  align-items: center;
+  border-radius: 7px;
+}
+.container--status-active{
+  background-color: #E4F7FF;
+  
+}
+.container--status-active :global(.vtex-rich-text-0-x-link){
+  color: #27AFE5 !important;
+}
+.wrapper--link-politicas .link{
+  color: #808080;
+  font-size: 14px;
+  text-decoration: none;
+}
+.wrapper--link-politicas .link:hover{
+  color: black;
+  font-weight: bold;
+}
+.wrapper--link-politicas .paragraph{
+  margin: 5px;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+.container--TItuloMenu {
+  margin: 0 0 0 25px;
+}
+.paragraph--categoryLink{
+  margin: 0;
+}
+.link--categoryLink{
+  color: #27AFE5;
+}
+.container--categoryLink {
+  justify-content: center;
+}
+.paragraph--titulosInfoProduct{
+  text-align: left;
+  color: #27AFE5;
+  font-size: 25px;
+}
+.paragraph--titulosCards{
+  margin: 10px 0 20px 0;
+  color: #27AFE5;
+  font-size: 15px;
+  font-weight: 700;
+}
+.link--titulosCards{
+  text-decoration: none;
+  color: #27AFE5;
+  
+}
+.paragraph--contenidoInfocards{
+  margin: 0;
+  font-size: 13px;
+}
+.heading--faqsTitulo {
+  color: #27AFE5;
+  padding: 0 100px;
+}
+.paragraph--tituloFaqs{
+  color: #27AFE5;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+}
+.wrapper--select-store-gps,
+.wrapper--select-store-text{
+  width: 100%;
+}
+.paragraph--select-store-text{
+  color: #808080;
+  text-align: center;
+  margin-bottom: 0;
+}
+.paragraph--select-store-gps{
+  color: #27AFE5;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0;
+  
+}
+.paragraph--select-store-gps::before{
+  content: "";
+  background: url("https://cutis.vteximg.com.br/arquivos/icono_gps.png") no-repeat;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-size: 85%;
+  margin-right: 15px;
+  margin-bottom: -1px;
+}
+@media(max-width:600px){
+  .paragraph--tituloFaqs{
+    color: #27AFE5;
+    font-weight: bold;
+    margin: 0;
+    font-size: 10px;
+  }
+}
+.wrapper--tituloFaqs .paragraph--contenidofaqs{
+  color: #27AFE5;
+  font-weight: bold;
+}
+.wrapper--contenidofaqs .paragraph--tituloFaqs{
+  color: #3f3f40;
+  font-weight: 400;
+}
+.paragraph--header-top {
+  padding: 0 !important;
+
+}
+.link--link{
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+}
+.link--link:hover{
+  color: #27AFE5;
+}
+.paragraph--header-top{
+  color: black;
+  font-size: 11px;
+  margin: 8px 0;
+}
+.container--header-top {
+  justify-content: end;
+}
+.container--header-top.container--headertopLink {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+.link--categoriasTitulo{
+  color: #808080;
+  text-decoration: none;
+}
+:global(.vtex-flex-layout-0-x-flexCol--imagenCategoriaColumn):hover .link--categoriasTitulo{
+  color: #27AFE5;
+  font-weight: bold;
+}
+.wrapper--decorativo::before{
+  content: "";
+  display: block;
+  background: url(/arquivos/izquierdas.png) no-repeat;
+  background-size: 100%;
+  width: 120px;
+  height: 10px;
+  margin-right: 10px;
+}
+.wrapper--decorativo::after{
+  content: "";
+  display: block;
+  background: url(/arquivos/derechas.png) no-repeat;
+  background-size: 100%;
+  width: 120px;
+  height: 10px;
+  margin-left: 10px;
+}
+.wrapper--decorativo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container--categoriasTabbers {
+  justify-content: center;
+}
+.paragraph--categoriasTabbers{
+  margin: 8px;
+}
+.link--categoriasTabbers{
+  color: #27AFE5;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 157px;
+  border: 1px solid #27AFE5;
+  border-radius: 5px;
+  transition: 400ms all;
+}
+.link--categoriasTabbers:hover{
+  background: #27AFE5;
+  color: white;
+}
+.container--marcasTittles {
+  border-top: 1px solid #E7EEF1;
+  margin: 0 100px;
+}
+.wrapper--infoProductContent{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+/* :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2n) .wrapper--contenidoSlideCategory::before{
+  content: "";
+  background: url(/arquivos/Paso2New.png) no-repeat;
+  background-size: 100%;
+  width: 37px;
+  height: 38px;
+  margin-right: 10px;
+} */
+/* :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3) .wrapper--contenidoSlideCategory::before{
+  content: "";
+  background: url(/arquivos/Paso1New.png) no-repeat;
+  background-size: 100%;
+  width: 37px;
+  height: 38px;
+  margin-right: 10px;
+} */
+/* :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(4n) .wrapper--contenidoSlideCategory::before{
+  content: "";
+  background: url(/arquivos/Paso3New.png) no-repeat;
+  background-size: 100%;
+  width: 37px;
+  height: 38px;
+  margin-right: 10px;
+} */
+.link--footer{
+  color: #808080;
+  font-size: 12px;
+  text-decoration: none;
+}
+.link--footer:hover{
+  color: #27AFE5;
+}
+.paragraph--footer{
+  margin: 2px 0;
+}
+.paragraph--footer{
+  font-size: 12px;
+  color: #D3D3D3;
+}
+.container--tittleSlider {
+  justify-content: center;
+}
+.link--tittleSlider{
+  color: #27AFE5;
+  font-weight: bold;
+  text-decoration: none;
+}
+.container--button-cards {
+  justify-content: center;
+}
+.link--button-cards{
+  text-decoration: none;
+  color: white;
+  background: #27AFE5;
+  border-radius: 5px;
+  padding: 10px 60px;
+  transition: 400ms all;
+}
+.link--button-cards:hover{
+  background: #1B7BA1;
+}
+.paragraph--contenidofaqs{
+  color: #808080;
+  font-size: 12px;
+  text-align: justify;
+}
+.paragraph--cierreBuscador{
+  color: white;
+}
+.paragraph--infoProductContent{
+  margin: 0;
+}
+.paragraph--vitrinaDestacada{
+  margin: 0;
+}
+.container--tituloSlideCategory {
+  margin-bottom: 10px;
+}
+.paragraph--contenidoSlideCategory {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.paragraph--contenidoSlideCategory.paragraph--vitrinaRutina {
+  margin: 0 auto;
+}
+
+.wrapper--contenidoSlideCategory.wrapper--vitrinaRutina {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+/*ESTILOS CONTACTO*/
+.container--servicio-al-cliente-subtitulo {
+  padding: 0 100px;
+}
+
+.container--servicio-al-cliente-texto {
+  padding: 0 100px;
+}
+
+.headingLevel2--servicio-al-cliente-titulo::before {
+  content: "a";
+  width: 52px;
+  color: transparent;
+  position: relative;
+  display: block;
+  height: 100%;
+  background: url(https://cutis.vteximg.com.br/arquivos/contacto-title.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headingLevel2--servicio-al-cliente-titulo {
+  display: flex;
+}
+
+.paragraph--envio-news {
+  color: #27AFE5;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.headingLevel4--servicio-al-cliente-subtitulo {
+  margin: 0;
+  color: #27afe5;
+}
+
+.paragraph--servicio-al-cliente-texto {
+  font-size: 20px;
+}
+.wrapper--login-options .paragraph{
+  margin: 10px 0;
+}
+.wrapper--login-options .link{
+  color: #808080;
+  text-decoration: none;
+}
+.wrapper--login-options .link:hover{
+  color: #27AFE5;
+}
+.link--contenidofaqs{
+  color: #808080;
+}
+@media (max-width: 1000px) {
+  .container--titulosFooter {
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .paragraph--titulosFooter{
+    margin: 0;
+  }
+  .container--infoProductContent {
+    justify-content: flex-start;
+  }
+  .paragraph--infoProductContent {
+    text-align: left;
+  }
+  .heading--tittleCategory {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  .container--SubMenuItems {
+    justify-content: center;
+  }
+  .paragraph--SubMenuItems{
+    margin-top: 0;
+  }
+  .paragraph--marcasTitle{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .paragraph--TItuloMenu{
+    color: #27AFE5;
+    font-size:20px;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  .paragraph--SubMenuItems {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(128, 128, 128);
+  }
+  :global(.vtex-disclosure-layout-1-x-content--menuOfertas--visible) .paragraph--SubMenuItems {
+   font-size: 10px;
+  }
+  .wrapper--tituloVitrinaDestacada .paragraph{
+    position: absolute;
+    top: -100px;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 8px;
+  }
+  .wrapper--tituloVitrinaDestacada{
+    position: relative;
+    width: 44%;
+  }
+  .paragraph--tituloNewsletter{
+    text-align: center;
+  }
+  .heading--faqsTitulo{
+    padding: 0 10px;
+    font-size: 34px;
+  }
+  .wrapper--decorativo::before {
+    width: 80px;
+    height: 10px;
+    margin-right: 3px;
+  }
+  .wrapper--decorativo::after {
+    width: 70px;
+    height: 10px;
+    margin-left: 3px;
+  }
+  .heading--shelfTitle {
+    font-size: 22px;
+  }
+  .container--marcasTittles {
+    margin: 0;
+  }
+  .paragraph--tituloSlideCategory{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .paragraph--tituloCheckout{
+    font-size: 13px;
+    padding: 0 !important;
+    margin: 5px 0;
+  }
+  .container--tituloCheckout {
+    justify-content: start;
+    margin-left: 20px;
+  }
+  .paragraph--contenidoSlideCategory{
+    font-size: 11px;
+    margin: 0;
+    margin-left: 5px;
+  }
+  .link--categoriasTabbers {
+    padding: 8px 86px;
+  }
+  .container--tituloSlideCategory {
+    margin-bottom: 0px;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2n) .wrapper--contenidoSlideCategory::before{
+    width: 43px;
+    height: 38px;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3n) .wrapper--contenidoSlideCategory::before{
+    width: 43px;
+    height: 38px;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(4n) .wrapper--contenidoSlideCategory::before{
+    width: 43px;
+    height: 38px;
+  }
+  .container--derechosReservados {
+    background: #F7F9FB;
+  }
+  .paragraph--derechosReservados{
+    font-size: 12px;
+    color: #808080;
+  }
+  .container--item-menu-fixed {
+    justify-content: center;
+  }
+  .link--item-menu-fixed{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+  .link--item-menu-fixed.link--ofertas{
+    color: #27AFE5;
+  }
+  .link--item-menu-fixed.link--wp{
+    color: #3EC350;
+  }
+  .paragraph--item-menu-fixed{
+    margin: 3px 0;
+    line-height: 16px;
+  }
+  .headingLevel4--servicio-al-cliente-subtitulo {
+    font-size: 20px;
+    margin: 10px 0 0;
+  }
+  .paragraph--servicio-al-cliente-texto {
+    font-size: 15px;
+  }
+  .container--servicio-al-cliente-texto {
+    padding: 0 5%;
+  }
+  .container--servicio-al-cliente-subtitulo {
+    padding: 0 5%;
+  }
+  .headingLevel2--servicio-al-cliente-titulo::before {
+    width: 35px;
+  }
+  .headingLevel2--servicio-al-cliente-titulo {
+    font-size: 18px !important;
+  }
+
+  .paragraph--titulosInfoProduct{
+    margin-bottom: 20px!important;
+    text-transform: uppercase;
+  }
+  .paragraph.paragraph--cierreBuscador {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+}
+
+.paragraph.paragraph--titleCategory {
+  padding: 7px 42px 7px 7px;
+  margin: 0;
+  font-size: 12px;
+  min-width: 105px;
+}
+.paragraph.paragraph--contenCate {font-size: 12px;margin: 0;padding: 10px 0 7px 17px;text-decoration: underline;}
+.listItem.listItem--contenidofaqs {
+  color: gray;
+  font-size: 12px;
+}
+.paragraph.paragraph--contenCate{
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0 7px 17px;  
+  color: #2c2c2c !important;    
+}
+.link--contenCate{
+  color:#2c2c2c;
+}
+.headingLevel2--localizador-contenedor-store{
+  text-align: center ;
+}
+.container--localizador-contenedor-store{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  color:#33afe5;
+}
+:global(.vtex-store-locator-0-x-loadAll){
+  display: none;
+}
+.wrapper--text-ciudades-no{
+  width: 100%;
+}
+.paragraph--text-ciudades-no{
+  color: #808080;
+  text-align: center;
+  padding: 15px;
+}
+.wrapper--text-limpiar-filtro{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #33afe5;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.wrapper--text-limpiar-filtro:hover{
+  color: #fff;
+}
+.container--text-ciudades-no{
+  display: none;
+}

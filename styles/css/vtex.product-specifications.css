@@ -1,0 +1,29 @@
+.specificationValue--last[data-specification-name='Tipo de presentación']{
+    display: block;
+}
+.specificationName{
+    color: #27AFE5;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 5px;
+}
+.specificationValue {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification) .specificationName[data-specification-name="descripcion-corta"] {
+    DISPLAY: NONE;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecification) .specificationValue[data-specification-name="descripcion-corta"] {
+    DISPLAY: NONE;
+}
+@media(min-width:800px){
+    .specificationsTableContainer--DESCR-CORTA {
+        MARGIN: 0;
+    }
+}

@@ -1,0 +1,297 @@
+.trigger--fitroTrigger{
+    background: transparent;
+    border: 1px solid #27AFE5;
+    height: 51px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 52%!important;
+    margin-left: 0px;
+    padding: 8px 0;
+}
+.trigger--fitroTrigger:hover{
+    background-color: #d2f1ff;
+    color: #fff !important;
+}
+
+.trigger--fitroTrigger2--visible{
+    margin: 0;
+}
+.trigger--filtroCierreAll--visible{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 0;
+}
+.content--filtroContent--visible{
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    height: 100%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100% !important;
+    opacity: 1;
+    transition: 1s all;
+}
+.content--filtroContent--hidden{
+    opacity: 0;
+}
+.trigger--fitroTrigger2--visible{
+    border: 0;
+    width: 100% !important;
+    border-radius: 0;
+    position: relative;
+}
+.trigger--fitroTrigger2--visible::after{
+    content: "X";
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #27AFE5;
+}
+.trigger--question {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.trigger--question--visible{
+    background: #E4F7FF;
+}
+.trigger--question::after{
+    content: "";
+    background: url(/arquivos/flechaAbajoFaqs.png) no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 9px;
+    display: block;
+    position: absolute;
+    right: 21px;
+}
+
+.trigger--question--visible::after{
+    background: url(/arquivos/flechaAzulFaqs.png) no-repeat;
+}
+.trigger--question--visible :global(.vtex-rich-text-0-x-paragraph){
+    color: #27AFE5;
+}
+.trigger--question :global(.vtex-rich-text-0-x-paragraph){
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 400 !important;
+}
+.content--filtroContent--visible :global(.vtex-rich-text-0-x-container--tituloFiltro2){
+    justify-content: flex-start;
+}
+@media (max-width: 600px) {
+    .trigger--subMneusMTrigger{
+        border: 0;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .content--subMneusMContent--visible{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: white;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-menuItem--itemsPrincipales){
+        background: transparent;
+        padding: 0 0 0 30px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-styledLinkContainer--itemsPrincipales)::before{
+        left: -16px;
+        transform: rotate(180deg);
+        top: 5px;
+    }
+    .content--lupaContent {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 7px;
+        background: white;
+        padding: 7px 10px;
+        z-index: 99999;
+    }
+    .trigger--lupaTrigger {
+        height: 31px;
+        background: transparent;
+        border: 0;
+        margin-right: 5px;
+    }
+    .trigger--subMneusMTrigger {
+        background: #F7F9FB;
+    }
+    .content--subMneusMContent--visible{
+        padding: 0 0px;
+        margin-top: 67px;
+        height: 97%
+    }
+    .content--subMneusMContent--visible.content--menusPrincipal--visible{
+        padding: 0 ;
+    }
+    .trigger--ofertas {
+        background: #E4F7FF;
+    }
+    .trigger--cierreBuscador {
+        background: transparent;
+        height: 40px;
+        width: 40px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+    }
+    .content--subMneusMContent--visible{
+        padding: 0 20px;
+    }
+    .content--subMneusMContent.content--menuOfertas--visible{
+        padding: 0;
+    }
+}
+
+
+.trigger--titleCategoryF  {background: #F9F9F9;border: none;margin: 4px 0 0 0;border-radius: 25px;}
+
+.content--contCategoryF {border-radius: 21px;background: #f9f9f9;}
+
+
+.trigger.trigger--titleCategoryF.trigger--visible.trigger--titleCategoryF--visible::before {background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzulNew.png) no-repeat;background-size: 100%;position: absolute;right: 4%;display: block;width: 10px;content: "";height: 10px;top: 7%;}
+
+.trigger.trigger--titleCategoryF.trigger--hidden.trigger--titleCategoryF--hidden::before {background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzulNew.png) no-repeat;background-size: 100%;position: absolute;right: 14%;display: block;width: 10px;content: "";transform: rotate(180deg);height: 10px;top: 31%;}
+
+.trigger.trigger--titleCategoryF.trigger--hidden.trigger--titleCategoryF--hidden {position: relative;}
+
+/* estilos John S estatícas */
+.trigger--faqs-disclosure{
+    width: 100%;
+    border: none;
+    background: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+}
+.trigger--faqs-disclosure--hidden::after{
+    content: "";
+    background: url("https://cutis.vteximg.com.br/arquivos/chevron-icon.png") no-repeat;
+    background-size: 100%;
+    width: 14px;
+    height: 14px;
+    background-position-y: center;
+}
+.trigger--faqs-disclosure--visible::after{
+    content: "";
+  background: url("https://cutis.vteximg.com.br/arquivos/chevron-icon.png") no-repeat;
+  background-size: 100%;
+  width: 14px;
+  height: 14px;
+  background-position-y: center;
+  transform: rotate(180deg);
+}
+.trigger--faqs-disclosure--visible{
+    border-radius: 7px 7px 0 0;
+    border-top: 1px solid #27AFE5;
+    border-left: 1px solid #27AFE5;
+    border-right: 1px solid #27AFE5;
+}
+.content--faqs-disclosure--visible{
+    background-color: #fff;
+    margin-top: -10px;
+    border-radius: 0 0 7px 7px;
+    border-bottom: 1px solid #27AFE5;
+    border-left: 1px solid #27AFE5;
+    border-right: 1px solid #27AFE5;
+}
+.content--faqs-disclosure--visible :global(.vtex-rich-text-0-x-wrapper--contenidofaqs){
+    padding: 0 10px;
+}
+.trigger--faqs-disclosure :global(.vtex-rich-text-0-x-container--tituloFaqs){
+    width: 90%;
+}
+
+@media(min-width:600px) and (max-width:1000px){
+    
+    .trigger--lupaTrigger{
+      border: none;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+    }
+    .trigger--lupaTrigger--visible{
+        border: none;
+        background-color: transparent;
+        display: none;
+        align-items: center;
+      }
+    .content--lupaContent {
+        position: absolute;
+        width: 60%;
+        left: 20%;
+        top: 20%;
+    }
+    .trigger--cierreBuscador--visible{
+        position: absolute;
+        right: -30px;
+        border: none;
+        background: #fff;    
+    }
+    .trigger--cierreBuscador--visible :global(.vtex-rich-text-0-x-paragraph--cierreBuscador){
+        color: #2c2c2c;
+        font-weight: 700;
+        font-size: 20px !important;
+        margin-top: 5px !important;
+    }
+    .trigger--subMneusMTrigger{
+        border: 0;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .content--subMneusMContent--visible{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: white;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-menuItem--itemsPrincipales){
+        background: transparent;
+        padding: 0 0 0 30px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-styledLinkContainer--itemsPrincipales)::before{
+        left: -16px;
+        transform: rotate(180deg);
+        top: 5px;
+    }
+    
+    .trigger--subMneusMTrigger {
+        background: #F7F9FB;
+    }
+    .content--subMneusMContent--visible{
+        padding: 0 0px;
+        margin-top: 67px;
+        height: 97%
+    }
+    .content--subMneusMContent--visible.content--menusPrincipal--visible{
+        padding: 0 ;
+    }
+}

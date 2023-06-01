@@ -1,0 +1,523 @@
+{
+    "store.custom#tyc": {
+        "children": [
+            "image#tycImg",
+            "rich-text#tyc",
+            "flex-layout.row#tyc"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#tyc": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## TÉRMINOS Y CONDICIONES"
+        }
+    },
+    "image#tycImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#tyc": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+            "flex-layout.col#estaticastyc",
+          "flex-layout.col#tyc-1"
+        ]
+    },
+     // Primera columna de los tycs
+
+    "flex-layout.col#estaticastyc": {
+        "props": {
+            "blockClass": "contenidoPoliticas"
+        },
+        "children": [
+            "rich-text#tyc-content-1",
+            "rich-text#tyc-content-2",
+            "rich-text#tyc-content-3",
+            /* "rich-text#tyc-content-4", */
+            "rich-text#tyc-content-5",
+            "rich-text#tyc-content-6",
+            "rich-text#tyc-content-7",
+            "rich-text#tyc-content-8"
+        ]
+    },
+    "rich-text#tyc-titulo": {
+        "props": {
+            "text": "TÉRMINOS Y CONDICIONES"
+        }
+    },
+    // contenido de los terminos y condiciones
+    "rich-text#tyc-content-1": {
+        "props": {
+            "text": "[Términos y condiciones](/terminos-y-condiciones)",
+            "blockClass":["link-politicas","status-active"]
+        }
+    },
+    "rich-text#tyc-content-2": {
+        "props": {
+            "text": "[Restablecer contraseña](/restablecer-contrasena)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-3": {
+        "props": {
+            "text": "[Politica de privacidad](/politica-privacidad)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-4": {
+        "props": {
+            "text": "[Accesos corporativos](/accesos-corporativos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-5": {
+        "props": {
+            "text": "[Protección de datos](/proteccion-datos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-6": {
+        "props": {
+            "text": "[Derecho al retracto](/derecho-de-retracto)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-7": {
+        "props": {
+            "text": "[Faqs](/faq)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#tyc-content-8": {
+        "props": {
+            "text": "[Quienes somos](/quienes-somos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    // columna 2
+    "flex-layout.col#tyc-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#tycContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#tycContent": {
+        "children": [
+            "flex-layout.col#tycContent1",
+            "flex-layout.col#tycContent2",
+            "flex-layout.col#tycContent3",
+            "flex-layout.col#tycContent4",
+            "flex-layout.col#tycContent5",
+            "flex-layout.col#tycContent6",
+            "flex-layout.col#tycContent7",
+            "flex-layout.col#tycContent8",
+            "flex-layout.col#tycContent9",
+            "flex-layout.col#tycContent10",
+            "flex-layout.col#tycContent11",
+            "flex-layout.col#tycContent12",
+            "flex-layout.col#tycContent13",
+            "flex-layout.col#tycContent14",
+            "flex-layout.col#tycContent15"
+            
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "flex-layout.col#tycContent1": {
+        "children": [
+            "rich-text#tyc1",
+            "rich-text#tyc2"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent2": {
+        "children": [
+            "rich-text#tyc3",
+            "rich-text#tyc4",
+            "rich-text#tyc5"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent3": {
+        "children": [
+            "rich-text#tyc6",
+            "rich-text#tyc7"            
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent4": {
+        "children": [
+            "rich-text#tyc8",
+            "rich-text#tyc9"            
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent5": {
+        "children": [
+            "rich-text#tyc10",
+            "rich-text#tyc11"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent6": {
+        "children": [
+            "rich-text#tyc12",
+            "rich-text#tyc13"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent7": {
+        "children": [
+            "rich-text#tyc14",
+            "rich-text#tyc15"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent8": {
+        "children": [
+            "rich-text#tyc16",
+            "rich-text#tyc17"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent9": {
+        "children": [
+            "rich-text#tyc18",
+            "rich-text#tyc19"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent10": {
+        "children": [
+            "rich-text#tyc20",
+            "rich-text#tyc21"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent11": {
+        "children": [
+            "rich-text#tyc22",
+            "rich-text#tyc23"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent12": {
+        "children": [
+            "rich-text#tyc24",
+            "rich-text#tyc25"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent13": {
+        "children": [
+            "rich-text#tyc26",
+            "rich-text#tyc27"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent14": {
+        "children": [
+            "rich-text#tyc28",
+            "rich-text#tyc29",
+            "rich-text#tyc30",
+            "rich-text#tyc31"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "flex-layout.col#tycContent15": {
+        "children": [
+            "rich-text#tyc32",
+            "rich-text#tyc33",
+            "rich-text#tyc34",
+            "rich-text#tyc35",
+            "rich-text#tyc36",
+            "rich-text#tyc37",
+            "rich-text#tyc38",
+            "rich-text#tyc39",
+            "rich-text#tyc40"
+        ],
+            "props": {
+                "blockClass": "box-items"
+            }
+    },
+    "rich-text#tyc1": {
+        "props": {
+            "text": "General",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc2": {
+        "props": {
+            "text": "Bienvenido al sitio de comercio electrónico www.cutis.com.co, constituido bajo las leyes colombianas, cuya actividad principal es comercialización y asesoría para el uso de productos dermatológicos y dermocosméticos de alta calidad para la salud y belleza de la piel para su adquisición en línea por los consumidores ubicados en la República de Colombia, en adelante (“cliente”).\n\n Señor cliente: Se comunica que el sitio web, identificado bajo el dominio www.cutis.com.co, cumple con la normatividad vigente de ventas a distancia y protección al consumidor, es un sitio web diseñado para ofrecer al consumidor una experiencia de compra ágil, practica e informada de los productos comercializados por DROGUERIA DERMATOLOGICA CUTIS S.A., entre los cuales se encuentran: productos dermatológicos, dermocosmeticos, suplementos dietarios y artículos para el cuidado personal.\n\n La adquisición de los productos en línea aplica para envíos nacionales, en la dirección suministrada por el cliente para tal efecto. En tal razón, las peticiones, quejas o reclamos relacionados con el uso del sitio web, las promociones ofrecidas y los productos adquiridos se regirán por las leyes colombianas.\n\n Igualmente se informa que DROGUERIA DERMATOLOGICA CUTIS S.A. se reserva el derecho de actualizar o modificar en cualquier momento y sin previo aviso el contenido de los presentes Términos y Condiciones, motivo por el que se recomienda al cliente revisarlos cada vez que utilice el sitio web. Las actualizaciones o modificaciones de los Términos y Condiciones comenzarán a regir a partir de la fecha de la publicación en el sitio web. La última versión de los Términos y Condiciones se podrá consultar en www.cutis.com.co y estarán disponibles de manera permanente.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc3": {
+        "props": {
+            "text": "1-Registro de cliente en el Sitio",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc4": {
+        "props": {
+            "text": "DROGUERIA DERMATOLOGICA CUTIS S.A. opera el sitio web de www.cutis.com.co, el registro del cliente en este sitio web www.cutis.com.co constituye una condición indispensable para comprar productos. Para ello, el cliente debe registrar en la página debe registrar sus datos básicos incluyendo información personal como nombres y apellidos, correo electrónico y teléfonos.\n\n En el proceso de registro en el Sitio: \n\n Nombre de cliente y dirección de correo electrónico.\n\n Recibirá en el correo suministrado un enlace para continuar con el registro.\n\n Debe dar click en iniciar sesión y asignar una nueva contraseña; y para finalizar dar click en guardar.\n\n Debe dar click en iniciar sesión y asignar una nueva contraseña; y para finalizar dar click en guardar.\n\n La información solicitada en el registro tiene por objeto la inscripción del Cliente para acceder al Sitio Web www.cutis.com.co  y eventualmente adquirir los productos dermatológicos y dermocosméticos  de alta calidad para la salud y belleza de la piel.\n\n ",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc5": {
+        "props": {
+            "text": "Una vez registrado, si el Cliente decide comprar productos dermatológicos, dermocosmeticos, suplementos dietarios o artículos para el cuidado personal que se mencionan en el Sitio, según el medio de pago seleccionado, será necesario que provea su información financiera, incluyendo información específica de su tarjeta débito, tarjeta de crédito, dirección en la que recibe los productos, teléfono y dirección a la que desea que DROGUERIA DERMATOLOGICA CUTIS S.A. envíe sus productos.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc6": {
+        "props": {
+            "text": "2 Clave de Cliente",
+            "blockClass": ["tituloFaqs"]
+        }
+    }
+    ,
+    "rich-text#tyc7": {
+        "props": {
+            "text": "Una vez registrado, el cliente deberá ingresar su clave que la ha sido asignada al momento de registro y cambiarla por su nueva contraseña única y personal, para realizar cada compra, lo que permitirá el acceso personalizado, confidencial y seguro al Sitio Web www.cutis.com.co  La administración de esta clave es de absoluta responsabilidad del cliente. Su entrega a terceras personas o su utilización por dichas terceras personas, no implicará responsabilidad alguna para DROGUERIA DERMATOLOGICA CUTIS S.A. El cliente tendrá la posibilidad de cambiar la clave de acceso, para lo cual deberá sujetarse al procedimiento establecido en el sitio web www.cutis.com.co.\n\n Siempre que no se haya notificado oportunamente por parte del cliente la existencia de la violación de su información personal, o cuando el Cliente no haya procedido a notificar a las correspondientes entidades financieras o cooperativas de la pérdida, uso indebido, sustracción o hurto de los instrumentos conferidos por éstas para realizar transacciones, o cuando se realice un uso indebido de sus datos de Registro, DROGUERIA DERMATOLOGICA CUTIS S.A. no asume ninguna responsabilidad por tales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc8": {
+        "props": {
+            "text": "3 Uso",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc9": {
+        "props": {
+            "text": "Para usar el sitio web el cliente deberá leer y aceptar de forma previa, todas las condiciones establecidas en los presentes Términos y Condiciones, así como la política de privacidad de DROGUERIA DERMATOLOGICA CUTIS S.A., documentos que estarán disponibles para su consulta en www.cutis.com.co, El uso del sitio web implica la aceptación plena de las condiciones establecidas en los Términos y Condiciones. Por la utilización del sitio y/o sus servicios, el cliente se obliga a cumplir expresamente con los Términos y Condiciones, no pudiendo alegar el desconocimiento del mismo, ni de la Política de Privacidad.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc10": {
+        "props": {
+            "text": "4 Capacidad del Cliente",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc11": {
+        "props": {
+            "text": "La adquision de productos en www.cutis.com.co está disponibles sólo para aquellas personas que tengan capacidad legal para contratar según lo dispuesto por la legislación colombiana vigente. Si el cliente carece de dicha capacidad legal no podrá realizar transacciones en el sitio uso exclusivo para mayores de edad.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc12": {
+        "props": {
+            "text": "5 Verificación del Cliente - Impedimento de uso",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc13": {
+        "props": {
+            "text": "Al ingresar a este sitio el cliente adquiere el compromiso de suministrar información personal correcta y verdadera para la entrega efectiva de los productos adquiridos. www.cutis.com.co examinará la solicitud presentada por el cliente y se reservará la facultad de verificar los datos comunicados por cada uno de los clientes. De constatarse una inconsistencia en la información del cliente al momento de confirmación para la entrega de su compra se podrá proceder con la cancelación del pedido.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc14": {
+        "props": {
+            "text": "6 Responsabilidad del Cliente",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc15": {
+        "props": {
+            "text": "El cliente se obliga a notificar oportunamente a la entidad correspondiente del sector financiero o cooperativo, la pérdida o robo de su tarjeta de crédito y demás instrumentos facilitados por las mismas para realizar transacciones, tales como tarjetas débito, claves personales, etc., con el fin de que tales instrumentos sean inhabilitados.\n\n Se le prohíbe al cliente transmitir o enviar desde este Sitio cualquier material ilegal, amenazador, calumniador, difamatorio, obsceno, escandaloso, pornográfico y/o cualquier otro material que pudiera dar lugar a cualquier responsabilidad civil o penal en los términos de la Ley. Así mismo, el Cliente acepta no utilizar ningún dispositivo, software entre otros para obstruir el funcionamiento correcto del Sitio y de sus contenidos y de las actividades realizadas en el mismo.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc16": {
+        "props": {
+            "text": "7 Autorización para el tratamiento de datos personales",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc17": {
+        "props": {
+            "id":"cambio+",
+            "text": "Descripción de la finalidad para la cual se utilizarán los datos recogidos: DROGUERIA DERMATOLOGICA CUTIS S.A. busca mantener una excelente relación con todos nuestros clientes y por ello queremos comunicarnos con usted de forma eficiente y segura. De conformidad con lo dispuesto en la Ley 1581 de 2012 'Por la cual se dictan disposiciones generales para la protección de datos personales' y el Decreto 1377 de 2013, sus datos de carácter personal, así como la información correspondiente a los productos comprados por usted en DROGUERIA DERMATOLOGICA CUTIS S.A., serán recogidos en una base de datos para los fines que a continuación se señalan:\n\n productos, servicios, promociones, descuentos, eventos, campañas, actividades, alianzas y estudios de acuerdo con su rango de edad y/o composición familiar.\n\n Prestarle adecuadamente y de forma especializada los servicios ofrecidos por las DROGUERIA DERMATOLOGICA CUTIS S.A., a través de diferentes canales (presenciales y no presenciales).\n\n Informarle sobre nuevos productos, servicios, cambios o novedades en la prestación de los mismos.\n\n Solicitarle su evaluación de la calidad en la prestación de nuestros servicios y realizar estudios internos sobre hábitos de consumo.\n\n Así mismo, le manifestamos que nuestras políticas de tratamiento de datos personales y los mecanismos a través de los cuales hacemos uso de éstos son seguros y confidenciales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc18": {
+        "props": {
+            "text": "8 Disponibilidad de productos",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc19": {
+        "props": {
+            "text": "DROGUERIA DERMATOLOGICA CUTIS S.A. se encarga de la actualización de la página y la revisión constante de los productos que se exhiben en el Sitio. No obstante, www.cutis.com.co puede modificar y descontinuar los productos en cualquier momento sin contraer ninguna responsabilidad frente a los clientes del Sitio.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc20": {
+        "props": {
+            "text": "9 Comunicaciones Promocionales y/o Publicitarias",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc21": {
+        "props": {
+            "text": "Los Clientes autorizan expresamente a DROGUERIA DERMATOLOGICA CUTIS S.A. para enviarles promociones al correo electrónico registrado en el sitio web www.cutis.com.co Conforme a las características de cada cliente según las compras y enlaces visitados.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc22": {
+        "props": {
+            "text": "10 Formación del Consentimiento de Compra",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc23": {
+        "props": {
+            "text": "El consentimiento por parte del cliente se manifiesta en los pasos de compra establecidos en el Sitio Web www.cutis.com.co aceptando cada uno de ellos y se perfecciona con la manifestación final de compra después de haber revisado el resumen del pedido. Antes de la confirmación final de compra, el cliente podrá cancelar la compra en cualquier momento.\n\n DROGUERIA DERMATOLOGICA CUTIS S.A. expedirá un acuse de recibo del mismo al correo electrónico registrado por el cliente al registrarse, con información del número de pedido, precio exacto, nombre de producto comprado, datos del cliente, dirección de entrega.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc24": {
+        "props": {
+            "text": "11 Procedimiento de Compra de Productos",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc25": {
+        "props": {
+            "text": "El Sitio Web www.cutis.com.co solicitara la siguiente información específica nombres y apellidos, número de identificación, número de teléfono, dirección en la que recibe los productos.\n\n Se podrán utilizar los medios de pago informados en el sitio web  www.cutis.com.co.\n\n En caso de utilizarse las tarjetas bancarias aceptadas en este sitio web www.cutis.com.co, los Clientes están sujetos a los términos y condiciones del Banco emisor, sin que a DROGUERIA DERMATOLOGICA CUTIS S.A. Le quepa responsabilidad alguna en relación con los aspectos señalados en dichos contratos.\n\n El procedimiento de compra de los Productos a través del Sitio Web www.cutis.com.co es el siguiente:\n\n Todo Cliente que pretenda adquirir productos a través del Sitio Web www.cutis.com.co deberá estar previamente inscrito y tener su clave. Para lo anterior, se requerirá proporcionar su correo electrónico y nombre completo, y demás datos personales que se soliciten en el en el Sitio Web www.cutis.com.co.\n\n Los productos se agregan al “Carrito de Compras” y dar click pagar ahora.\n\nIntroducir los datos que se le soliciten (tales como número de identificación, teléfono, nombres y apellidos, dirección), así como los datos de la forma de pago.\n\n verificar los datos de la compra y dar click en continuar con el siguiente paso.\n\nAsignar el modo de pago y suministrar lo datos que requería el Banco emisor.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc26": {
+        "props": {
+            "text": "12 Condiciones de Pago",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc27": {
+        "props": {
+            "text": "El precio que se deberá pagar por cada producto adquirido será el precio vigente en el sitio al momento de hacerse el pedido.\n\n Antes de la aceptación por parte de www.cutis.com.co.de cualquier oferta de compra, el cliente deberá elegir los términos y las condiciones de pago según los medios de pago que se encuentren establecidos en el Sitio www.cutis.com.co. Pone a disposición de los clientes un sistema de conexión segura para la realización de las transacciones que se efectúen en el sitio. No obstante, en ningún caso será responsable por las fallas que se presenten en las comunicaciones de las entidades bancarias o de crédito, así como tampoco de los perjuicios causados al cliente con ocasión de una acción u omisión por parte de dichas entidades.\n\n Una vez que el Sitio verifique el pago, podrá proceder a la aceptación de la oferta de compra. En todo caso, no obstante haberse verificado el pago, www.cutis.com.co. Podrá denegar la aceptación de una oferta de compra o aceptarla parcialmente, en cuyo caso sólo estará obligado a restituirle al cliente, sin ningún tipo de interés o rendimiento, el valor cancelado por la oferta de compra no aceptada o el porcentaje correspondiente a la parte no aprobada de una oferta de compra aceptada parcialmente.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc28": {
+        "props": {
+            "text": "13 Entrega de los productos \n\n POLÍTICA DE ENVÍOS \n\n ENTREGAS:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc29": {
+        "props": {
+            "text": "Las compras electrónicas de productos realizadas en www.cutis.com.co podrán hacerse desde cualquier país, teniendo en cuenta que las entregas de los productos se realizan únicamente dentro del territorio colombiano, en las zonas y lugares a los que tenga acceso de acuerdo con su red y por consiguiente podrá negarse a la aceptación de una oferta de compra cuando el domicilio registrado por el cliente para realizar la entrega, no se encuentre dentro de las zonas geográficas habilitadas por www.cutis.com.co para tal efecto. \n\n Los productos adquiridos por el cliente serán entregados en el domicilio que el cliente haga constar al realizar su oferta de compra. \n\n Se entiende que cualquier persona que se encuentre en el domicilio donde debe realizarse la entrega, estará debidamente autorizada por el cliente para recibir su pedido. Por consiguiente, www.cutis.com.co queda exonerado de cualquier responsabilidad por la entrega que realizare, siempre que la misma se haga en el domicilio registrado en el sitio.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc30": {
+        "props": {
+            "text": "Tiempos de entrega:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc31": {
+        "props": {
+            "text": "Es importante que al momento de ingresar la dirección de entrega verifique que ésta es correcta y tiene la información completa, sólo de esta manera recibirá sus productos en los tiempos estipulados. \n\n Nuestra promesa de entrega para las ciudades: Cali y Bogotá es enviar su pedido en menos de 24horas, pero en lo posible tratamos de hacer los envíos el mismo día en que realizó la compra. Sin embargo, es importante que tenga en cuenta que su tiempo de entrega puede variar: de acuerdo a los horarios de atención del canal virtual que son: de Lunes a Sabado de 9am a 4pm, por tanto, si su pedido se efectúa fuera del horario mencionado, el despacho puede presentar retrasos en la entrega. Adicional, si se llegase a presentar que uno de los productos de su compra esté sin stock, nos comunicaremos con usted oportunamente para informarle en cuanto tiempo estará nuevamente disponible, de no estar de acuerdo podremos realizar la devolución del dinero correspondiente a dicho producto. \n\n Pedidos para el resto del país, la entrega será de 1 u hasta 10 días hábiles de acuerdo a la localidad destino. No se hacen entregas los días sábado, domingo ni festivos. \n\n **Nota:** Es importante aclarar que, el envío será despachado a su destino, una vez se refleje y confirme en nuestra pasarela de pagos que la transacción de compra fue exitosa. (Este proceso en ocasiones puede tardar dependiendo de la entidad bancaria con la que efectúe la compra).",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc32": {
+        "props": {
+            "text": "14 Política de Devoluciones y cambios",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc33": {
+        "props": {
+            "text": "**A. Requisitos para cambio de producto o garantía:** Plazo: Para artículos que presenten defecto de fabricación, CUTIS S.A. permite cambio, en un plazo máximo de 15 días calendario después de realizada la compra. Este período no afecta las garantías legales del proveedor y otros derechos reconocidos al consumidor en la legislación colombiana vigente.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc34": {
+        "props": {
+            "text": "**B. Requisitos para la solicitud de cambio:**\n\n - El consumidor debe presentar la reclamación ya sea verbal o por escrito sin perjuicio de lo establecido en el artículo 58 de la ley 1480 de 2011. \n\n - Deberá aportar prueba de la compra, sin perjuicio de lo establecido en el artículo 27 de la ley 1480 de 2011. \n\n - El consumidor debe indicar el defecto que posee el producto y devolverlo a la tienda en un plazo no mayor a 15 días calendario de la compra para su análisis. \n\n - En caso de posibles reacciones alérgicas: se deberá comunicar en un plazo no mayor de 15 días calendario a partir de la fecha de la compra.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc35": {
+        "props": {
+            "text": "**C. Exclusiones:**\n\n A menos que se trate de garantía del producto, se excluyen los productos de limpieza, uso personal, maquillaje, medicamentos y otros artículos similares de uso personal, los cuales no tendrán cambio una vez usados.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc36": {
+        "props": {
+            "text": "**D. Efectiva de la garantía:**\n\n La efectividad de la garantía no se hará efectiva en los siguientes casos: \n\n - Cuando el daño provenga de mala utilización del producto por parte del consumidor, o no atienda las instrucciones de uso, o conservación del producto.\n\n - Cuando el producto ya fue retirado del establecimiento de comercio “CUTIS S.A.” y no presentó ningún tipo de daño conforme a las políticas de cambio.\n\n - Cuando hayan pasado más de 15 días calendario contados a partir de la compra.\n\n - Cuando haya intervención de terceros diferentes a los autorizados por el proveedor o fabricante del producto.\n\n - Cuando el daño provenga de fuerza mayor o caso fortuito.\n\n - En los demás casos previstos en las normas legales o reglamentarias vigentes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc37": {
+        "props": {
+            "text": "**E. Trámites y procedimientos de efectividad de las garantías:**\n\n Las peticiones, quejas y reclamos (verbales y escritos) se recibirán mediante el procedimiento establecido para la recepción de las mismas, (Consultar página web www.cutis.com.co), las reclamaciones por efectividad de la garantía serán re direccionadas de acuerdo con los tres tipos de condiciones: \n\n - Cuando no satisfaga las condiciones de calidad (que es cuando no cumple con las características inherentes y las atribuidas en la información suministrada al consumidor)\n\n - Cuando no satisfaga las condiciones de idoneidad ofrecidas por el fabricante o distribuidor (que es cuando el producto no satisfaga la necesidad para lo cual ha sido producido)\n\n - Cuando no satisfaga las condiciones de seguridad (que es cuando el producto en condiciones normales de utilización no presente riesgos irrazonables para la salud)\n\n - Cuando la garantía solicitada sea por calidad o idoneidad, en lo posible se resolverán de inmediato con el visto bueno del jefe de calidad, o máximo dentro de los 15 días hábiles siguientes a su recepción.\n\n - Cuando la garantía solicitada sea por condiciones de seguridad, será remitida al fabricante o al proveedor (según sea el caso) y será resuelta en el término máximo de 15 días hábiles siguientes a la presentación de la reclamación directa, suministrando las razones por las cuales se decide en tal sentido y con las pruebas que sean sustento para ello. \n\nLos productos en promoción u oferta cuentan con garantía, Salvo los casos en que expresamente contengan alguna circunstancia, desperfecto o avería que afecte su idoneidad y esta hubiere sido aceptada por el comprador al momento de la compra.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc38": {
+        "props": {
+            "text": "**F. Oportunidad**\n\n No se atenderán reclamos fuera del término de garantía otorgado por el fabricante, el cual empezará a partir de la fecha de la compra. En el caso que el fabricante no haya otorgado expresamente garantía, CUTIS S.A. concede una garantía de 15 días calendario a partir de la fecha de compra.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc39": {
+        "props": {
+            "text": "**H. Aspectos incluidos en la garantía:**\n\nDe ser procedente la efectividad de la garantía se procederá de la siguiente manera: \n\n - Reparación del producto: si no es posible la reparación, se procederá con el cambio del producto por uno idéntico o de similares características. \n\n - Devolución del dinero: En los siguientes casos se hará la devolución de dinero de acuerdo con el valor cancelado al momento de la compra: \n    - Cuando no sea posible la reparación del producto o este se encuentre descontinuado y/o esté fuera de inventario. \n\n    - Cuando el diagnóstico determine que es una falla grave y/o que esta se repita con posterioridad a la reparación del mismo. \n\n**Nota:** En dichos eventos, el consumidor podrá optar por la generación de un bono de CUTIS S.A.  O la devolución del dinero pagado de acuerdo con la factura. El reintegro del dinero se producirá a más tardar dentro de los cinco (5) días hábiles siguientes a su solicitud, siempre y cuando el cliente ponga a disposición el bien objeto de la solicitud de efectividad de la garantía, libre de gravámenes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc40": {
+        "props": {
+            "text": "**I. Recomendaciones Generales**\n\n - Presente su documento de identidad \n\n - CUTIS S.A. no se hace responsable por hurto o pérdida de Bonos de Regalo ya que estos se redimen al portador. \n\n - Revise que ha recibido todos los artículos en perfecto estado, una vez abandone la Droguería Dermatológica CUTIS S.A. no se hace responsable de la pérdida de los mismos. \n\n - En caso de reacción alérgica o cualquier síntoma no esperado, suspenda el uso o aplicación del producto y consulte inmediatamente a su médico de confianza. \n\n - Consulte a su médico o reporte al asesor de la Droguería Dermatológica CUTIS S.A.  cualquier patología y/o afección que padezca, condición especial o embarazo, con el fin de brindarle una asesoría adecuada antes de la compra de los productos. \n\n - Antes de utilizar nuestros productos, consulte cualquier inquietud con nuestro personal capacitado de la Droguería Dermatológica CUTIS S.A. \n\nEs responsabilidad de los clientes cuidar sus objetos personales, **CUTIS S.A.** no se responsabiliza por pérdidas o daños ocurridos en la **Droguería Dermatológica CUTIS S.A.** \n\nEn caso de requerir información adicional, contáctenos en la Línea 487 0040 ext. 210 o en la dirección electrónica calidad@cutiscol.com.co  en nuestra página web www.cutis.com.co.",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+}

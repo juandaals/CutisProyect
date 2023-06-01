@@ -1,0 +1,350 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  max-width: 1520px;
+}
+.paginationDot{
+  height: 3px !important;
+  background: #d3d3d3;
+}
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  height: 5px;
+}
+.paginationDot--isActive {
+  background: #27AFE5;
+  width: 15px !important;
+  border-radius:20px ;
+
+}
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.dotsContainer {
+  display: none;
+}
+.sliderLayoutContainer--marcas-carousel{
+  padding: 0 100px;
+  margin: 0 0 20px 0;
+}
+:global(.vtex-slider-layout-0-x-imageElement--marcas-carousel) {
+  width: 119px!important;
+  border-radius: 5px;
+}
+@media(min-width:1350px){
+  :global(.vtex-slider-layout-0-x-imageElement--marcas-carousel) {
+    width: 200px!important;    
+  }
+}
+:global(.vtex-slider-0-x-dotsContainer){
+  display: none;
+}
+
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardTextContainer--Mio){
+  width: 60%;
+}
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+  border-radius: 10px;
+}
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+  height: 350px;
+}
+.sliderLayoutContainer--category-carousel{
+  margin-top: 91px;
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+.imageElement--category-carousel {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+}
+.slideChildrenContainer--shelf {
+  transition: 400ms all;
+  border-radius: 5px;
+}
+.slideChildrenContainer--shelf:hover {
+  border: 1px solid;
+}
+.sliderLayoutContainer--shelf {
+  height: 100%;
+}
+.sliderTrackContainer--shelf {
+  max-width: 100%;
+  height: 100%;
+}
+.sliderTrack--shelf {
+  height: 100%;
+}
+.slideChildrenContainer--shelf {
+  background: white;
+}
+.sliderLayoutContainer--shelf{
+  padding: 0 !important;
+}
+/* Vitrina gigante en el home */
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-element){
+  align-items: center;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-image){
+  max-height: 100% !important;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-stack-layout-0-x-stackContainer){
+  width: 100%;
+  height: 100%;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-stack-layout-0-x-stackItem ){
+  height: 100%;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-imageContainer){
+  height: 100%;
+}
+/* Fin estilos vitrina gigante */
+.caretIcon {
+  display: none;
+}
+.imageElementLink--carousel {
+  width: 100%;
+}
+.imageElementLink--promo-carousel {
+  width: 100%;
+}
+.sliderLeftArrow::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline.png) no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  transition: all 40ms;
+  left: 63px;
+  position: absolute;
+  transition: 400ms all;
+}
+.sliderRightArrow::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-2.png) no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-right: 5px;
+  position: absolute;
+  left: -93px;
+  transition: 400ms all;
+}
+.sliderLeftArrow:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-hover-2.png) no-repeat;
+}
+.sliderRightArrow:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-1.png) no-repeat;
+}
+.sliderLayoutContainer--shelf .sliderLeftArrow::before {
+  left: -17px;
+  position: absolute;
+}
+.sliderLayoutContainer--shelf .sliderRightArrow::before {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.sliderRightArrow--shelf {
+  margin-right: -26px;
+}
+.slide--shelf.slide--category {
+  padding: 0 20px;
+  min-height: 361px;
+}
+.slideChildrenContainer--slider-info {
+  padding: 0 20px;
+}
+.slide--shelf {
+  padding: 0 15px;
+}
+.sliderTrackContainer--carousel {
+  max-width: 100%;
+}
+.sliderTrackContainer--promo-carousel {
+  max-width: 100%;
+}
+/* slider cuidado de la piel */
+.sliderRightArrow--destacados {
+  top: -22%;
+  right: 41px;
+}
+.sliderLeftArrow--destacados {
+  top: -17%;
+  left: 85%;
+}
+.sliderTrackContainer--marcas-carousel {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E7EEF1;
+}
+.slide--marcas-carousel {
+  justify-content: center;
+}
+.slideChildrenContainer--marcas-carousel {
+  width: 185px;
+  height: 95px;
+  background: white;
+  border-radius: 10px;
+  transition: 400ms all;
+}
+.slideChildrenContainer--marcas-carousel:hover {
+  box-shadow: 2px 2px 15px 0px rgb(0 0 0 / 10%);
+  border: 1px solid #d3d3d3;
+
+}
+.sliderLeftArrow.sliderLeftArrow--marcas-carousel::before {
+  margin-top: -40px;
+}
+.sliderRightArrow.sliderRightArrow--marcas-carousel::before {
+  margin-top: -40px;
+}
+:global(.vtex-account__page-body) .slide--shelf {
+  width: 25% !important;
+}
+:global(.vtex-account__page-body) .sliderTrack--shelf{
+  justify-content: flex-start;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button){
+  background:transparent !important;
+}
+.sliderLayoutContainer--carousel.sliderLayoutContainer--principalCarousel{
+  margin-bottom: 0;
+}
+.productSpecificationValue--comparison-page{
+  font-size: 14px;
+}
+.sliderLayoutContainer--vitrinaGigante .slide--shelf {
+  margin-bottom: 0;
+}
+.sliderLayoutContainer--comparison-page .sliderArrows::before{
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+  border-radius: 50%;
+  left: 0%;
+}
+.sliderLayoutContainer--comparison-page .sliderRightArrow {
+  box-shadow: 0px 0px 20px rgb(0 0 0 /7%);
+  border-radius: 50%;
+  right: 40px;
+}
+.sliderLayoutContainer--comparison-page{
+  margin:auto;
+}
+@media (max-width: 600px) {
+  :global(.vtex-account__page-body) .slide--shelf {
+    width: 100% !important;
+  }
+  .sliderLayoutContainer--marcas-carousel {
+    padding: 0 0px 0 30px;
+    margin: 0 0 50px 0;
+  }
+  .slideChildrenContainer--categoriasCarousel {
+    justify-content: center;
+  }
+  .sliderTrackContainer--categoriasCarousel {
+    padding: 0 10px;
+  }
+  .sliderLayoutContainer--marcas-carousel.sliderLayoutContainer--marcas-sliderMenu{
+    padding: 0 19px;
+    margin: 0 0 0px 0;
+  }
+  .sliderLayoutContainer--shelf{
+    padding: 0 0 0 0px !important;
+  }
+  .sliderLeftArrow::before {
+    left: -31px;
+  }
+  .sliderRightArrow::before {
+    left: 0px;
+  }
+  .slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+    height: 200px;
+  }
+  .sliderLayoutContainer--category-carousel{
+    padding: 0 30px;
+    margin: 20px 0;
+  }
+  .imageElement--category-carousel {
+    width: 95px!important;
+    height: 93px!important;
+    border-radius: 50%;
+  }
+  .slide--shelf {
+    padding: 0 5px;
+  }
+  .sliderLayoutContainer--shelf .sliderLeftArrow::before {
+    left: 6px;
+  }
+  .sliderLayoutContainer--shelf .sliderRightArrow::before {
+    position: relative;
+    left: -24px;
+    right: 0;
+  }
+  .sliderLayoutContainer--marcas-carousel{
+    padding: 0;
+  }
+  .sliderLayoutContainer--carousel{
+    margin-bottom: 20px;
+  }
+  .paginationDotsContainer--carousel {
+    bottom: -20px;
+  }
+  .paginationDotsContainer--categoriasCarousel {
+    bottom: -35px;
+  }
+  .slideChildrenContainer--marcas-carousel{
+    width: 100%;
+    height: 67px;
+    margin: 0 8px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .imageElement--marcas-carousel {
+    width: 65px!important;
+    border-radius: 5px;
+    transform: scale(1.5);
+  }
+  .paginationDotsContainer--category-carousel {
+    bottom: -10px;
+  }
+  .sliderLeftArrow--category-carousel.sliderLeftArrow::before {
+    left: 0px;
+    margin-top: -34px;
+    position: relative;
+  }
+  .sliderRightArrow--category-carousel.sliderRightArrow::before {
+    left: 0px;
+    margin-top: -34px;
+    position: relative;
+  }
+  .paginationDotsContainer--shelf {
+    bottom: -26px;
+  }
+  .paginationDotsContainer--shelf.paginationDotsContainer--promo-Mes {
+    bottom: -7px;
+  }
+  .slide--shelf.slide--category {
+    padding: 0 4px;
+    min-height: 361px;
+    margin: 0;
+  }
+  .sliderTrackContainer--marcas-carousel {
+    padding-bottom: 20px;
+  }
+}
+
