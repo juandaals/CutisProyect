@@ -176,7 +176,9 @@
     width: 100%;
 }
 .optionsListItem {
+    display: flex;
     width: 33%;
+    align-items: center;
 }
 .optionsListItemContainer {
     display: none;

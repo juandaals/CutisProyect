@@ -849,13 +849,20 @@
   max-height: 661px;
 }
 
+
+
 .imageElement--Hechopor {
-  width: 40%;
+  width: 90%;
+  margin-left: -20rem;
 }
 .imageElement--pagosMedios {
-  width: 80%;
-  height: min-content;
-  margin: 0 0 0 auto;
+  width: 100%;
+    height: min-content;
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: -22rem;
 
 }
 

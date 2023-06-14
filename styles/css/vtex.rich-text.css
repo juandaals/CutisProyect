@@ -460,8 +460,11 @@
   margin: 2px 0;
 }
 .paragraph--footer{
-  font-size: 12px;
+  display: flex;
+  margin-top: 10px;
+  font-size: 1rem;
   color: #D3D3D3;
+
 }
 .container--tittleSlider {
   justify-content: center;

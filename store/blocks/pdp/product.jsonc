@@ -1,6 +1,7 @@
 {
   "store.product.product-comparison": {
     "children": [
+      "addi-infos",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "tab-layout#product",
@@ -61,6 +62,7 @@
   //     "showDiscountValue": false
   //   }
   // },
+  "addi-infos": {},
   "rich-text#specifications": {
     "props": {
       "text": "##### Product Specifications"

@@ -15,9 +15,13 @@
   padding: 0 40px;
 }
 .flexRow--mediosPagos{
-  padding: 20px 30px;
-  background: #F7F9FB;
+    display: flex;
+    background: #F7F9FB;
+    height: 95px;
+    align-items: center;
 }
+
+
 .flexColChild--column-newsletter :global(.vtex-store-components-3-x-imageElement--imgfooter ){
   width: 200px;
 }
@@ -801,11 +805,14 @@
 .flexColChild--bannersFooter {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .flexColChild--bannersFooter :global(.vtex-store-components-3-x-imageElement--Whast ){
-  width: 50px;
-  height: 50px;
+  display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 55px;
+    height: 55px;
 }
 .flexCol--responsiveSlider .flexColChild--responsiveSlider:first-child{
   display: none;
@@ -1198,9 +1205,10 @@
   padding: 0 10px 0 0;
 }
 .flexColChild--bannersFooter:first-child {
-  width: 90%;
+  display: flex;
+  width: 110%;
   justify-content: space-around;
-  margin: 0 0 0 auto;
+  margin-bottom: 6rem;
 }
 .flexColChild--login:last-child {
   position: absolute;
@@ -1341,7 +1349,9 @@
     font-weight: bold;
   }
   .flexRowContent--allsales .stretchChildrenWidth{
-    width: 33.3333% !important;
+    display: flex;
+    width: 33.3333% ;
+    align-items: center;
     padding: 5px;
   }
   .flexRowContent--allsales {

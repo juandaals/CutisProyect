@@ -224,7 +224,9 @@
     },
     "children": [
       "menu-item#faq",
-      "menu-item#servicio-al-cliente"
+      "menu-item#servicio-al-cliente",
+      "menu-item#linea-etica"
+
     ]
   },
   "menu-item#restablecer": {
@@ -344,6 +346,21 @@
         "noFollow": false,
         "tagTitle": "Servicio Al Cliente",
         "text": "Servicio Al Cliente"
+      }
+    }
+  },
+  "menu-item#linea-etica": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://drive.google.com/file/d/1A47iOI53MIpIAU5_sQfYk7FzrVotxhIP/view?usp=sharing",
+        "noFollow": false,
+        "tagTitle": "linea etica",
+        "text": "Linea Ética"
       }
     }
   }
