@@ -106,7 +106,8 @@
           "image#marca-5",
           "image#marca-6",
           "image#marca-7",
-          "image#marca-8"
+          "image#marca-8",
+          "image#marca-17"
         ]
       },
       "vtex.menu@2.x:menu#marcas-destacadas-2": {
@@ -250,6 +251,14 @@
           "src": "https://cutis.vteximg.com.br/arquivos/cetaph.png",
           "link":{
             "url":"/cetaph"
+          }
+        }
+      },
+      "image#marca-17": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/Dr-Serrano-Marcas-destacadas.png",
+          "link":{
+            "url":"/serrano"
           }
         }
       },
@@ -419,6 +428,7 @@
         "menu-item#category-marcas-premium-quimiderm",
         "menu-item#category-marcas-premium-saderma",
         "menu-item#category-marcas-premium-sensilis",
+        "menu-item#category-marcas-premium-serrano",
         "menu-item#category-marcas-premium-sesderma",
         "menu-item#category-marcas-premium-siegfried",
         "menu-item#category-marcas-premium-skin-allience",
@@ -1060,6 +1070,21 @@
         "noFollow": false,
         "tagTitle": "Sensilis",
         "text": "Sensilis"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-serrano": {
+    "props": {
+        "id": "menu-item-category-apparel-serrano",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/serrano",
+        "noFollow": false,
+        "tagTitle": "Serrano",
+        "text": "Serrano"
         }
     }
   },

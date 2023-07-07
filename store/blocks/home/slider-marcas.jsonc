@@ -18,6 +18,13 @@
                     }
                 },
                 {
+                    "image": "https://cutis.vteximg.com.br/arquivos/la-roche-posay-new-marcas.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/la-roche-posay-new-marcas.png",
+                    "link":{
+                      "url":"/serrano"
+                    }
+                },
+                {
                     "image": "https://cutis.vteximg.com.br/arquivos/isdin-new-marcas.png",
                     "mobileImage": "https://cutis.vteximg.com.br/arquivos/isdin-new-marcas.png",
                     "link":{
