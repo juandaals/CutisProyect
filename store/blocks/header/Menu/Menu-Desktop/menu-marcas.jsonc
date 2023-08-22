@@ -262,6 +262,14 @@
           }
         }
       },
+      "image#marca-18": {
+        "props": {
+          "src": "https://www.cutis.com.co/percos?_q=percos&map=ft",
+          "link":{
+            "url":"/percos"
+          }
+        }
+      },
 
   // Marcas all
   "vtex.menu@2.x:submenu#marcas-all": {
@@ -414,6 +422,7 @@
         "menu-item#category-marcas-premium-novaderma",
         "menu-item#category-marcas-premium-pharmaderma",
         "menu-item#category-marcas-premium-pilopeptan",
+        "menu-item#category-marcas-premium-Percos Dermatology",
         "menu-item#category-marcas-premium-quideca"
 
       ]
@@ -1084,7 +1093,22 @@
         "href": "/serrano",
         "noFollow": false,
         "tagTitle": "Serrano",
-        "text": "Serrano"
+        "text": "Dr. Serrano"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-Percos Dermatology": {
+    "props": {
+        "id": "menu-item-category-apparel-Percos Dermatology",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/percos",
+        "noFollow": false,
+        "tagTitle": "Percos Dermatology",
+        "text": "Percos Dermatology"
         }
     }
   },

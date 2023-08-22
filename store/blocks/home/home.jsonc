@@ -4,7 +4,7 @@
       "list-context.image-list#demo",
       "list-context.image-list#promo",
       "__fold__.experimentalLazyAssets",
-      "slider-layout#principalSliderHomeCate",
+      "flex-layout.row#Bannerdos-newPrincipal",
       "rich-text#shelf-title",
       "tab-layout#tabsCatego",
       "rich-text#NUESTRAS-MARCAS",
@@ -256,20 +256,20 @@
   },
   "flex-layout.row#productstep1": {
     "children": [
-      "image#step-1",
+      /* "image#step-1", */
       "rich-text#infoProductStep1"
     ],
     "props": {
       "blockClass": ["productStep","step2"]
     }
   },
-  "image#step-1": {
+  /* "image#step-1": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/Paso1New.png",
       "blockClass": ["stepImagen"],
       "width":"10%"
     }
-  },
+  }, */
   "rich-text#infoProductStep1": {
       "props": {
         "text": "Eucerin Sun Oil Control\n Protección Uva, UVB 50+, con ácido anti-brillo, que controla, regula y matifica, ultraligero y de rápido absorción, adecuado para pieles mixtas a grasas.",
@@ -279,20 +279,20 @@
   // imagen dos
   "flex-layout.row#productstep2": {
     "children": [
-      "image#step-2",
+      /* "image#step-2", */
       "rich-text#infoProductStep2"
     ],
     "props": {
       "blockClass": ["productStep","step2"]
     }
   },
-  "image#step-2": {
+ /*  "image#step-2": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/Paso2New.png",
       "blockClass": ["stepImagen"],
       "width":"10%"
     }
-  },
+  }, */
   "rich-text#infoProductStep2": {
     "props": {
       "text": "Eucerin Sun Oil Control color claro\n Protege la piel grasa y con tendencia al acné de los daños inducidos por el sol con la Tecnología Espectral Avanzada y la defensa contra la luz HEVIS para una protección UV muy alta.",
@@ -302,20 +302,20 @@
   // imagen tres
   "flex-layout.row#productstep3": {
     "children": [
-      "image#step-3",
+      /* "image#step-3", */
       "rich-text#infoProductStep3"
     ],
     "props": {
       "blockClass": ["productStep","step2"]
     }
   },
-  "image#step-3": {
+  /* "image#step-3": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/Paso3New.png",
       "blockClass": ["stepImagen"],
       "width":"10%"
     }
-  },
+  }, */
   "rich-text#infoProductStep3": {
     "props": {
       "text": "Eucerin Sun Antipigmento\n Ayuda a prevenir el foto envejecimiento prematuro, a reducir las manchas y prevenir la reaparición.",
@@ -325,20 +325,20 @@
   // imagen cuatro
   "flex-layout.row#productstep4": {
     "children": [
-      "image#step-4",
+      /* "image#step-4", */
       "rich-text#infoProductStep4"
     ],
     "props": {
       "blockClass": ["productStep","step2"]
     }
   },
-  "image#step-4": {
+ /*  "image#step-4": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/icono.png",
       "blockClass": ["stepImagen"],
       "width":"10%"
     }
-  },
+  }, */
   "rich-text#infoProductStep4": {
     "props": {
       "text": "Eucerin Sun Anti- edad\n Tecnología Hyaluron con cadena corta y larga de ácido hialurónico, que rellena tanto las arrugas profundas como las superficiales, con acción matificante, adecuado para pieles maduras",
@@ -431,26 +431,48 @@
         "showNavigationArrows": "desktopOnly"
       }
   },
-  // BANNER DOS 
+  // BANNER principal y DOS ----------------------------------------------------------
   "flex-layout.row#Bannerdos": {
     "children": [
       "flex-layout.col#Bannerdos"
-    ],  
+    ],
     "props": {
       "blockClass": "vitrinadestacada1-1"
     }
+  },
+  "flex-layout.row#Bannerdos-newPrincipal": {
+    "children": [
+      "flex-layout.col#Bannerdos-1"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1-2"
+
+    }
+
   },
   "flex-layout.col#Bannerdos": {
     "children": [
       "responsive-layout.desktop#bannerdos",
       "responsive-layout.phone#bannerDosm"
-    ],  
+    ],
     "props": {
       "blockClass": "vitrinadestacada1"
     }
   },
+  "flex-layout.col#Bannerdos-1": {
+    "children": [
+      "responsive-layout.desktop#bannerdos-1",
+      "responsive-layout.phone#bannerDosm"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1-2"
+    }
+  },
   "responsive-layout.desktop#bannerdos": {
     "children": ["slider-layout#banner2"]
+  },
+  "responsive-layout.desktop#bannerdos-1": {
+    "children": ["slider-layout#banner3"]
   },
   "slider-layout#banner2": {
     "props": {
@@ -467,6 +489,21 @@
     },
     "children": ["image#bannerdos-1","image#bannerdos-2"]
   },
+  "slider-layout#banner3": {
+    "props": {
+      "height": 720,
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner2Carousel",
+      "showPaginationDots":"false",
+      "showNavigationArrows":"mobileOnly"
+    },
+    "children": ["image#bannerdos-3","image#bannerdos-4"]
+  },
   "image#bannerdos-1": {
     "props": {
       "src": "https://cutis.vteximg.com.br/arquivos/Banner2-1.png",
@@ -477,6 +514,24 @@
     }
   },
   "image#bannerdos-2": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-desk-new.png",
+      "blockClass": ["imgBanner-2","imagen2-2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-3": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-desk-new.png",
+      "blockClass": ["imgBanner-2","imagen2-1"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-4": {
     "props": {
       "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-desk-new.png",
       "blockClass": ["imgBanner-2","imagen2-2"],
