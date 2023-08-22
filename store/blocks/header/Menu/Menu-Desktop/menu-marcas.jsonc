@@ -399,7 +399,8 @@
       "menu-item#category-marcas-premium-genove",
       "menu-item#category-marcas-premium-heeliocare",
       "menu-item#category-marcas-premium-hidrisage",
-      "menu-item#category-marcas-premium-huden"
+      "menu-item#category-marcas-premium-huden",
+      "menu-item#category-marcas-premium-inbiotech"
 
     ]
   },
@@ -409,7 +410,6 @@
           "blockclass": "ColumnasMenuCategoria"
       },
       "children": [
-        "menu-item#category-marcas-premium-inbiotech",
         "menu-item#category-marcas-premium-isdin",
         "menu-item#category-marcas-premium-isispharma",
         "menu-item#category-marcas-premium-keracnyl",
