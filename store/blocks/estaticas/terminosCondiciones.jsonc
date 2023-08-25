@@ -127,7 +127,7 @@
             "flex-layout.col#tycContent13",
             "flex-layout.col#tycContent14",
             "flex-layout.col#tycContent15"
-            
+
         ],
         "props": {
             "blockClass": "politicaContenedor"
@@ -155,7 +155,7 @@
     "flex-layout.col#tycContent3": {
         "children": [
             "rich-text#tyc6",
-            "rich-text#tyc7"            
+            "rich-text#tyc7"
         ],
             "props": {
                 "blockClass": "box-items"
@@ -164,7 +164,7 @@
     "flex-layout.col#tycContent4": {
         "children": [
             "rich-text#tyc8",
-            "rich-text#tyc9"            
+            "rich-text#tyc9"
         ],
             "props": {
                 "blockClass": "box-items"
@@ -272,7 +272,23 @@
             "rich-text#tyc37",
             "rich-text#tyc38",
             "rich-text#tyc39",
-            "rich-text#tyc40"
+            "rich-text#tyc40",
+            "rich-text#tyc41",
+            "rich-text#tyc42",
+            "rich-text#tyc43",
+            "rich-text#tyc44",
+            "rich-text#tyc45",
+            "rich-text#tyc46",
+            "rich-text#tyc47",
+            "rich-text#tyc48",
+            "rich-text#tyc49",
+            "rich-text#tyc50",
+            "rich-text#tyc51",
+            "rich-text#tyc52",
+            "rich-text#tyc53",
+            "rich-text#tyc54",
+            "rich-text#tyc55",
+            "rich-text#tyc56"
         ],
             "props": {
                 "blockClass": "box-items"
@@ -519,5 +535,102 @@
             "text": "**I. Recomendaciones Generales**\n\n - Presente su documento de identidad \n\n - CUTIS S.A. no se hace responsable por hurto o pérdida de Bonos de Regalo ya que estos se redimen al portador. \n\n - Revise que ha recibido todos los artículos en perfecto estado, una vez abandone la Droguería Dermatológica CUTIS S.A. no se hace responsable de la pérdida de los mismos. \n\n - En caso de reacción alérgica o cualquier síntoma no esperado, suspenda el uso o aplicación del producto y consulte inmediatamente a su médico de confianza. \n\n - Consulte a su médico o reporte al asesor de la Droguería Dermatológica CUTIS S.A.  cualquier patología y/o afección que padezca, condición especial o embarazo, con el fin de brindarle una asesoría adecuada antes de la compra de los productos. \n\n - Antes de utilizar nuestros productos, consulte cualquier inquietud con nuestro personal capacitado de la Droguería Dermatológica CUTIS S.A. \n\nEs responsabilidad de los clientes cuidar sus objetos personales, **CUTIS S.A.** no se responsabiliza por pérdidas o daños ocurridos en la **Droguería Dermatológica CUTIS S.A.** \n\nEn caso de requerir información adicional, contáctenos en la Línea 487 0040 ext. 210 o en la dirección electrónica calidad@cutiscol.com.co  en nuestra página web www.cutis.com.co.",
             "blockClass": ["contenidofaqs"]
         }
+    },
+    "rich-text#tyc41": {
+        "props": {
+            "text": "Términos y condiciones campaña Bancolombia 25 y 26 agosto",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#tyc42": {
+        "props": {
+            "text": "El presente documento contiene los términos y condiciones aplicables a la Campaña pagando con tarjeta de crédito o débito BANCOLOMBIA, Esta consiste en\n\n · Recibe el **25%** o **30%** de descuento por compras en **referencias seleccionadas** entre el 25 y 26 de agosto de 2023, pagando con cualquier medio de pago Bancolombia. Esta campaña no es en alianza ni tiene vínculos con Bancolombia, aplica TyC; en todas nuestras tiendas físicas a nivel nacional y por nuestra página web www.cutis.com.co \n\n · Aplica para cualquier monto de compra \n\n · El envió será gratis a nivel nacional.  ",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#tyc43": {
+      "props": {
+          "text": "PRIMERA. – Territorio",
+          "blockClass": ["tituloFaqs"]
+      }
+  },
+  "rich-text#tyc44": {
+    "props": {
+        "text": "Campaña aplicable en la República de Colombia, para los potenciales clientes que cumplan con la Mecánica de la presente Campaña.",
+        "blockClass": ["contenidofaqs"]
     }
+},
+"rich-text#tyc45": {
+  "props": {
+      "text": "SEGUNDA. – Vigencia",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc46": {
+"props": {
+    "text": "Promoción válida los días 25 y 26 de agosto del 2023, en referencias seleccionas desde las **00:00 horas del 25 de agosto hasta las 23:59 horas del 26 de agosto de 2023.**",
+    "blockClass": ["contenidofaqs"]
 }
+},
+"rich-text#tyc47": {
+  "props": {
+      "text": "TERCERA. –Beneficio",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc48": {
+"props": {
+    "text": "Los potenciales clientes que cumplan con la Mecánica de la presente Campaña recibirán el 25% o 30% de descuento en las compras de referencias seleccionadas.",
+    "blockClass": ["contenidofaqs"]
+}
+},
+"rich-text#tyc49": {
+  "props": {
+      "text": "CUARTA. – Términos y Restriccione",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc50": {
+"props": {
+    "text": "Podrán participar todas las personas naturales y juridicas, mayores de edad, que residan en el territorio colombiano.",
+    "blockClass": ["contenidofaqs"]
+}
+},
+"rich-text#tyc51": {
+  "props": {
+      "text": "QUINTA–Tratamiento de Datos Personales",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc52": {
+"props": {
+    "text": "El cliente manifiesta expresamente que en virtud de la autorización de tratamiento de datos personales otorgada para que su información personal sea utilizada con las finalidades previstas en la política de tratamiento de datos de Cutis SA, que constan en el siguiente enlace Política de Tratamiento de Datos **https://www.cutis.com.co/proteccion-datos** , y en todo caso para cualquier finalidad vinculada con el desarrollo de la presente campaña.",
+    "blockClass": ["contenidofaqs"]
+}
+},
+"rich-text#tyc53": {
+  "props": {
+      "text": "SEXTA. – Validez de la Información",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc54": {
+"props": {
+    "text": "El potencial cliente confirma que ha verificado la información otorgada a Cutis S.A, y por tal razón reconoce y acepta que la información proporcionada y registrada en nuestra base de datos, es veraz y fidedigna, haciéndose completamente responsable por su falsedad.",
+    "blockClass": ["contenidofaqs"]
+}
+},
+"rich-text#tyc55": {
+  "props": {
+      "text": "SÉPTIMA – Canales de atención al cliente",
+      "blockClass": ["tituloFaqs"]
+  }
+},
+"rich-text#tyc56": {
+"props": {
+    "text": "en el caso de presentarse alguna inconformidad, reclamo, queja relacionada con la campaña, esta deberá ser presentada en los canales de comunicación de Cutis S.A:\n\n ✔ Punto de venta físicos \n\n ✔ Correo electrónico: **servicioalcliente@cutis.com.co** **calidad@cutiscol.com.co** \n\n ✔ **Página web: www.cutis.com.co/contact** . ",
+    "blockClass": ["contenidofaqs"]
+}
+}
+}
+
