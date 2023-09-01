@@ -44,7 +44,7 @@
 }
 @media(min-width:1350px){
   :global(.vtex-slider-layout-0-x-imageElement--marcas-carousel) {
-    width: 200px!important;    
+    width: 200px!important;
   }
 }
 :global(.vtex-slider-0-x-dotsContainer){
@@ -176,7 +176,17 @@
 }
 .sliderTrackContainer--carousel {
   max-width: 100%;
+  margin: 0px 4rem 3px 4rem;
+  border-radius: 10px;
 }
+@media (min-width: 320px) and (max-width: 426px) {
+  .sliderTrackContainer--carousel {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 1rem;
+  }
+}
+
 .sliderTrackContainer--promo-carousel {
   max-width: 100%;
 }
@@ -238,7 +248,7 @@
   left: 0%;
 }
 .sliderLayoutContainer--comparison-page .sliderRightArrow {
-  box-shadow: 0px 0px 20px rgb(0 0 0 /7%);
+  box-shadow: 0px 0px 20px #ff0101;
   border-radius: 50%;
   right: 40px;
 }

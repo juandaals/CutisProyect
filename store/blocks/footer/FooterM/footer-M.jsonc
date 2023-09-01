@@ -66,13 +66,14 @@
             "rich-text#tituloMedios",
             "image#pagosMobile",
             "rich-text#tituloDesarrolladoPor",
-            "flex-layout.row#desarrollaadoPorImages"
+            "flex-layout.row#desarrollaadoPorImages",
+            "rich-text#derechosReservados"
         ],
         "props": {
           "blockClass": "mediosColumn"
         }
     },
-    // tiutulos medios de pago 
+    // tiutulos medios de pago
     "rich-text#tituloMedios": {
         "props": {
           "textAlignment": "LEFT",
@@ -103,31 +104,22 @@
     // imagenes desarrollado por
     "flex-layout.row#desarrollaadoPorImages": {
         "children": [
-            "image#ePartnerLogo",
-            "image#vtexlogo"
-        ],  
+            "image#ePartnerLogo"
+        ],
         "props": {
           "blockClass": "desarrollado"
         }
     },
     "image#ePartnerLogo": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/epartner-logo.png",
+          "src": "https://cutis.vteximg.com.br/arquivos/Banner-Icontec-Mobile.png",
           "blockClass": ["logos"],
           "link":{
             "url":"/"
           }
         }
     },
-    "image#vtexlogo": {
-        "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/vtex-logo.png",
-          "blockClass": ["logos"],
-          "link":{
-            "url":"/"
-          }
-        }
-    },
+
     // ultimo comentario derechos reservados
     "rich-text#derechosReservados": {
         "props": {

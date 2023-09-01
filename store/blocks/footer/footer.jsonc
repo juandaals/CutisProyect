@@ -165,7 +165,7 @@
         "vtex.menu@2.x:menu#mas-info-2"
       ],
       "props": {
-        "tabId": "home4", 
+        "tabId": "home4",
         "blockClass": "footersColumn"
       }
     },
@@ -232,19 +232,23 @@
   },
   "rich-text#reservados": {
     "props": {
+      "width": "28%",
+    "align-items": "center",
       "text": "Todos los derechos reservados",
       "blockClass": "footer"
     }
   },
   "image#hechopor": {
     "props": {
+      "display": "flex",
       "src": "https://cutis.vteximg.com.br/arquivos/hechopor.png",
       "blockClass": ["Hechopor"]
     }
   },
   "image#medios": {
     "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/footer-general-pagos.png",
+      "display": "flex",
+      "src": "https://cutis.vteximg.com.br/arquivos/Addi-Banner-Medios-de-pago.png",
       "blockClass": ["pagosMedios"]
     }
   },

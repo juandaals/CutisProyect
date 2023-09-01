@@ -1504,11 +1504,9 @@
   .flexCol--column2vitrinaDestacado2  {
     margin: 5px 0 0 0;
   }
-  .flexRowContent--desarrollado {
-    display: flex;
-    padding: 0 80px;
-    align-items: center;
-  }
+  /* .flexRowContent--desarrollado {
+    estilos mobil
+  } */
   :global(.vtex-product-context-provider) .flexRowContent--breadcrumb {
     padding: 0 10px;
     display:flex !important;
