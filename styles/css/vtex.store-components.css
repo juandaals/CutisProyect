@@ -11,19 +11,17 @@
   width: 100%;
 }
 .discountInsideContainer {
-  z-index: 9;
   color: white;
   font-weight: bold;
-  display: block;
-  left: 0px;
-  top: 0px;
+  left: 13px;
+  top: 15px;
   padding: 0 5px;
   background: url(https://cutis.vteximg.com.br/arquivos/background-flag-descuento.png);
   background-size: cover;
   height: 44px;
   width: 44px;
   font-size: 27px;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .discountInsideContainer::after {
@@ -39,9 +37,9 @@
 
 @media(max-width:900px){
   .discountInsideContainer{
-  left: -5px;
+  left: 9px;
   transform: scale(0.8);
-  top: -5px;
+  top: 10px;
 }
 }
   :global(.vtex-shelf-1-x-slide--vitrinaCarrito) .discountInsideContainer{
