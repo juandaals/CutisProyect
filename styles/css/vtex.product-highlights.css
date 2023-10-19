@@ -54,13 +54,11 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
   .productHighlightWrapper--collection[data-highlight-id="404"] {
     left: 9rem;
-    z-index: 9999 !important;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   .productHighlightWrapper--collection[data-highlight-id="404"] {
     left: 13rem;
-    z-index: 9999 !important;
   }
 }
 
