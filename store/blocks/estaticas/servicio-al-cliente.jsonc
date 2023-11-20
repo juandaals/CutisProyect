@@ -1,8 +1,8 @@
 {
     "store.custom#servicio-al-cliente": {
-      "blocks": [ 
+      "blocks": [
           "rich-text#shelf-tittle-servicioalcliente",
-          "rich-text#shelf-sub-tittle-servicioalcliente", 
+          "rich-text#shelf-sub-tittle-servicioalcliente",
           "rich-text#shelf-texto-servicioalcliente",
           "flex-layout.row#contacto-box-form-titulo"
         ]
@@ -46,7 +46,7 @@
           "blockClass": "servicioAlClienteImageInfo"
         }
       },
-    
+
     "form#Servicio-al-cliente": {
       "props": {
         "entity": "SC",
@@ -64,8 +64,8 @@
       ],
       "blocks": ["form-success"]
     },
-    
-    
+
+
     "form-success": {
        "props": {
           "blockClass": ["envio-news"]
@@ -142,13 +142,13 @@
             "form-submit#enviar"
         ]
     },
-    
-    
-        
-    
-    
+
+
+
+
+
     /*campos input para el fommulario*/
-    
+
     "form-input.text#identificacion": {
         "props": {
           "pointer": "#/properties/identificacion",
@@ -220,7 +220,7 @@
             "blockClass": "enviar-input"
           }
      },
-    
+
      "form-submit#enviar": {
       "props": {
         "label": "Enviar",
@@ -233,7 +233,7 @@
         "label": "Acepto la Politica de tratamiento de datos y los Términos y Condiciones*"
       }
     }
-    
-    
-    
+
+
+
     }

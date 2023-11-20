@@ -1,4 +1,7 @@
 {
+  "popup-principal":{
+  "component":"popupprincipal"
+  },
   "store.search.product-comparison": {
   "around": ["comparison-context-wrapper"]
   },
@@ -8,12 +11,5 @@
   "store.product.product-comparison": {
   "around": ["comparison-context-wrapper"],
   "allowed": ["product-comparison-drawer"]
-  },
-
-  "wishlist-button":{
-  "component":"WishlistButton"
   }
-
-
-
 }
