@@ -69,5 +69,30 @@
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
     }
+
+  },
+ //modal popup principal
+  "modal-trigger#open-on-load": {
+    "props": {
+      "trigger": "load-session",
+      "blockClass": "modalPrincipal"
+    },
+  "children": ["modal-layout#example"]
+},
+"modal-layout#example": {
+  "children": ["image#modal-content","modal-actions.close"]
+},
+"modal-actions.close": {
+"props":{
+  "blockId":"miBotonCerrarModal",
+  "label": "X",
+  "labelId":"miLabelM"
+}
+},
+"image#modal-content": {
+  "props": {
+    "src": "https://cutis.vtexassets.com/arquivos/PopUpBeManosyUnas2.jpg",
+    "blockClass": "imageModal"
   }
+}
 }
