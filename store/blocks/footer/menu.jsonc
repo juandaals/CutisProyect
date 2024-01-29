@@ -229,6 +229,21 @@
 
     ]
   },
+  "vtex.menu@2.x:menu#linea-atencion": {
+    "children": ["rich-text#item1"],
+  "props": {
+    "orientation": "vertical"
+  }
+},
+"rich-text#item1": {
+  "props": {
+    "type": "custom",
+      "href": null,
+      "blockClass": "lineaAtencion",
+      "text": "WhatsApp y linea de atención **3234900758**<br><br>**Call center ventas**<br>Horarios de atención:<br>Lunes a viernes de 8:00am a 6:00pm. Sábado de 8:00am a 4:30pm<br> <br>**Servicio al cliente**<br>Horarios de atención:<br>Lunes a viernes de 8:00am a 6:00pm.<br>minformacion@cutis.com.co"
+
+  }
+  },
   "menu-item#restablecer": {
     "props": {
       "id": "menu-item-quienes",

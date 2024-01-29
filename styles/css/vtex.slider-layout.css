@@ -119,6 +119,7 @@
 }
 .imageElementLink--promo-carousel {
   width: 100%;
+  background-color: white;
 }
 .sliderLeftArrow::before {
   content: "";
@@ -235,6 +236,7 @@
 }
 .sliderLayoutContainer--carousel.sliderLayoutContainer--principalCarousel{
   margin-bottom: 0;
+  background-color: white;
 }
 .productSpecificationValue--comparison-page{
   font-size: 14px;

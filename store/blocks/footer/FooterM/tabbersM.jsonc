@@ -22,7 +22,8 @@
       "children":[
         "tab-list.item#tabbersfooterM-1",
         "tab-list.item#tabbersfooterM-2",
-        "tab-list.item#tabbersfooterM-3"
+        "tab-list.item#tabbersfooterM-3",
+        "tab-list.item#tabbersfooterM-4"
       ],
       "props":{
         "blockClass": "tabbersHome"
@@ -52,11 +53,23 @@
         "blockClass": "tabberFooter"
       }
     },
+    "tab-list.item#tabbersfooterM-4":{
+      "props":{
+        "id": "tab3",
+        "tabId": "tabbersfooterM-4",
+        "label": "Linea de atencion",
+        "blockClass": "tabberFooter",
+        "initiallyOpened": true
+
+      }
+    },
     "tab-content#tabbersfooterM":{
       "children":[
         "tab-content.item#tabbersfooterM-1",
         "tab-content.item#tabbersfooterM-2",
-        "tab-content.item#tabbersfooterM-3"
+        "tab-content.item#tabbersfooterM-3",
+        "tab-content.item#tabbersfooterM-4"
+
       ]
     },
     "tab-content.item#tabbersfooterM-1": {
@@ -84,8 +97,18 @@
         "vtex.menu@2.x:menu#mas-info-2"
       ],
       "props": {
-        "tabId": "tabbersfooterM-3", 
+        "tabId": "tabbersfooterM-3",
         "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#tabbersfooterM-4": {
+      "children": [
+        "vtex.menu@2.x:menu#linea-atencion"
+      ],
+      "props": {
+        "tabId": "tabbersfooterM-4",
+        "blockClass": "footersColumn"
+
       }
     }
 }

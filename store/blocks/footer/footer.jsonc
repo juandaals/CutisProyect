@@ -102,6 +102,7 @@
     "tab-list#home":{
       "children":[
         "tab-list.item#home2",
+        "tab-list.item#home5",
         "tab-list.item#home3",
         "tab-list.item#home4"
       ],
@@ -133,9 +134,19 @@
         "blockClass": "tabberFooter"
       }
     },
+    "tab-list.item#home5":{
+      "props":{
+        "initiallyOpened": true,
+        "id": "tab4",
+        "tabId": "home5",
+        "label": "Linea de atencion",
+        "blockClass": "tabberFooter"
+      }
+    },
     "tab-content#home":{
       "children":[
         "tab-content.item#home2",
+        "tab-content.item#home5",
         "tab-content.item#home3",
         "tab-content.item#home4"
       ]
@@ -166,6 +177,15 @@
       ],
       "props": {
         "tabId": "home4",
+        "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#home5": {
+      "children": [
+        "vtex.menu@2.x:menu#linea-atencion"
+      ],
+      "props": {
+        "tabId": "home5",
         "blockClass": "footersColumn"
       }
     },
